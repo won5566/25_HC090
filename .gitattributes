@@ -1,0 +1,63 @@
+﻿# ============================================================
+# Git LFS Configuration for GNSS-Based Remote-Steering Project
+# ============================================================
+
+# ========== CAD / 3D Model Files ==========
+*.SLDPRT filter=lfs diff=lfs merge=lfs -text
+*.SLDASM filter=lfs diff=lfs merge=lfs -text
+*.SLDDRW filter=lfs diff=lfs merge=lfs -text
+*.f3d filter=lfs diff=lfs merge=lfs -text
+*.FCStd filter=lfs diff=lfs merge=lfs -text
+*.step filter=lfs diff=lfs merge=lfs -text
+*.stp  filter=lfs diff=lfs merge=lfs -text
+*.igs  filter=lfs diff=lfs merge=lfs -text
+*.iges filter=lfs diff=lfs merge=lfs -text
+*.stl  filter=lfs diff=lfs merge=lfs -text
+*.3mf  filter=lfs diff=lfs merge=lfs -text
+*.dwg  filter=lfs diff=lfs merge=lfs -text
+*.dxf  filter=lfs diff=lfs merge=lfs -text
+
+# ========== PCB / 회로 설계 ==========
+*.kicad_pcb filter=lfs diff=lfs merge=lfs -text
+*.sch filter=lfs diff=lfs merge=lfs -text
+*.brd filter=lfs diff=lfs merge=lfs -text
+*.pcbdoc filter=lfs diff=lfs merge=lfs -text
+*.pro filter=lfs diff=lfs merge=lfs -text
+
+# ========== ROS2 / 센서 데이터 ==========
+*.bag filter=lfs diff=lfs merge=lfs -text
+*.pcd filter=lfs diff=lfs merge=lfs -text
+*.ply filter=lfs diff=lfs merge=lfs -text
+*.yaml filter=lfs diff=lfs merge=lfs -text
+*.launch.xml filter=lfs diff=lfs merge=lfs -text
+*.launch.py filter=lfs diff=lfs merge=lfs -text
+*.rviz filter=lfs diff=lfs merge=lfs -text
+
+# ========== 영상 / 이미지 ==========
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.mov filter=lfs diff=lfs merge=lfs -text
+*.avi filter=lfs diff=lfs merge=lfs -text
+*.mkv filter=lfs diff=lfs merge=lfs -text
+*.gif filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+*.tif filter=lfs diff=lfs merge=lfs -text
+*.tiff filter=lfs diff=lfs merge=lfs -text
+
+# ========== 시뮬레이션 / 로그 / 기타 대용량 ==========
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.7z filter=lfs diff=lfs merge=lfs -text
+*.tar filter=lfs diff=lfs merge=lfs -text
+*.gz  filter=lfs diff=lfs merge=lfs -text
+*.csv filter=lfs diff=lfs merge=lfs -text
+*.log filter=lfs diff=lfs merge=lfs -text
+
+# ========== 문서 (보고서, 논문, 포스터 등) ==========
+*.pdf filter=lfs diff=lfs merge=lfs -text
+*.pptx filter=lfs diff=lfs merge=lfs -text
+*.hwp filter=lfs diff=lfs merge=lfs -text
+*.docx filter=lfs diff=lfs merge=lfs -text
+
+# ========== Default (text files handled normally) ==========
+* text=auto
