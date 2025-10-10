@@ -1,0 +1,65 @@
+﻿# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+.env
+.env.*
+
+# === C/C++ / CMake / STM32 ===
+build/
+build-*/
+bin/
+obj/
+*.o
+*.obj
+*.out
+*.exe
+*.a
+*.lib
+*.dll
+*.so
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+# CubeIDE
+.settings/
+.metadata/
+Debug/
+Release/
+*.ioc
+# Keil / IAR (혹시 대비)
+*.uvprojx
+*.uvoptx
+*.eww
+*.ewp
+
+# === Arduino ===
+*.hex
+*.elf
+*.bin
+
+# === ROS2 (colcon) ===
+install/
+log/
+build/
+.colcon*
+ros2/*/CMakeLists.txt.user
+
+# === ngrok / misc secrets ===
+ngrok.yml
+*.pem
+*.key
+
+# === IDE / OS ===
+.vscode/
+*.code-workspace
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# === Large dump ===
+*.log
+*.tmp
