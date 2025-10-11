@@ -14,20 +14,21 @@ Developed by **Team L&K (KOREATECH)**, the system combines embedded hardware (ST
 
 ## 🧭 System Architecture
 
+<pre>
 [Tablet / App Inventor UI]
-↓ (TCP/IP commands)
+        ↓ (TCP/IP commands)
 [Flask Web Server]
-↓
-[ESP32] ← Wi-Fi TCP Relay
-↓
+        ↓
+[ESP32]  ← Wi-Fi TCP Relay
+        ↓
 [STM32 Controller]
-├─ RS-485 → BLDC Motors (4WD)
-├─ PWM → Steering Servos (4WIS)
-└─ UART5 → ESP32 Command Interface
-↓
+ ├─ RS-485 → BLDC Motors (4WD)
+ ├─ PWM   → Steering Servos (4WIS)
+ └─ UART5 → ESP32 Command Interface
+        ↓
 [Arduino Mega Sub #1] → Wheel Alignment (IR Sensors)
 [Arduino Mega Sub #2] → 2-Axis Camera Gimbal (MPU6050 PID)
-
+</pre>
 
 ---
 
@@ -48,31 +49,32 @@ Developed by **Team L&K (KOREATECH)**, the system combines embedded hardware (ST
 
 ## 📁 Repository Structure
 
+<pre>
 Mobile-Robot-Equipped-with-GNSS-Based-Remote-Steering-and-Variable-Wheels/
 │
-├─ appinventor/ # Android joystick app (.aia + README)
+├─ appinventor/                  # Android joystick app (.aia + README)
 │
 ├─ arduino/
-│ ├─ mega_sub1_ir_alignment/ # IR-based wheel alignment
-│ └─ mega_sub2_gimbal/ # 2-axis camera gimbal controller
+│  ├─ mega_sub1_ir_alignment/    # IR-based wheel alignment
+│  └─ mega_sub2_gimbal/          # 2-axis camera gimbal controller
 │
 ├─ cad/
-│ ├─ 가변바퀴/ # Variable-diameter wheel assembly
-│ ├─ 조향장치/ # Steering gearbox assembly
-│ └─ 카메라/ # Gimbal camera bracket
+│  ├─ 가변바퀴/                   # Variable-diameter wheel assembly
+│  ├─ 조향장치/                   # Steering gearbox assembly
+│  └─ 카메라/                     # Gimbal camera bracket
 │
-├─ docs/ # Papers, reports, and posters
+├─ docs/                         # Papers, reports, and posters
 │
-├─ esp32/ # TCP relay between Flask and STM32
+├─ esp32/                        # TCP relay between Flask and STM32
 │
-├─ ros2/ # GNSS→JSON bridge + Flask web visualization
+├─ ros2/                         # GNSS→JSON bridge + Flask web visualization
 │
-├─ scripts/ # Auto-execution and deployment scripts
+├─ scripts/                      # Auto-execution and deployment scripts
 │
-├─ server/ # Flask + TCP server core
+├─ server/                       # Flask + TCP server core
 │
-└─ stm32/GNSS_STM32/ # Firmware: RS-485 (BLDC), PWM (servo), UART5 (ESP32)
-
+└─ stm32/GNSS_STM32/             # Firmware: RS-485 (BLDC), PWM (servo), UART5 (ESP32)
+</pre>
 
 ---
 
@@ -200,4 +202,4 @@ All CAD models are designed in **SolidWorks 2023**, divided into three major sub
 ---
 
 **Maintained by Team L&K — KOREATECH**  
-📍 [GitHub Repository](https://github.com/won5566/Mobile-Robot-Equipped-with-GNSS-Based-Remote-Steering-and-Varia
+📍 [GitHub Repository](https://github.com/won5566/Mobile-Robot-Equipped-with-GNSS-Based-Remote-Steering-and-Variable-Wheels)
