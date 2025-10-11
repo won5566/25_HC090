@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * lwIP netif implementing an IEEE 802.1D MAC Bridge
  */
@@ -88,3 +88,5 @@
  */
 
 #endif /* LWIP_HDR_NETIF_BRIDGEIF_OPTS_H */
+
+

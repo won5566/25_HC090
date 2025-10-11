@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * Application layered TCP/TLS connection API (to be used from TCPIP thread)
  *
@@ -115,3 +115,5 @@ void *altcp_tls_context(struct altcp_pcb *conn);
 #endif /* LWIP_ALTCP_TLS */
 #endif /* LWIP_ALTCP */
 #endif /* LWIP_HDR_ALTCP_TLS_H */
+
+

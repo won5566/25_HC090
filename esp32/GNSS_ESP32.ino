@@ -1,14 +1,14 @@
-#include <WiFi.h>
+﻿#include <WiFi.h>
 
 const char* ssid     = "OLAX-4G-959A";
 const char* password = "48668917";
 
 HardwareSerial MySerial(2);  // UART2: GPIO17(TX2), GPIO16(RX2)
-WiFiServer server(80);       // HTTP Server (기존 유지)
+WiFiServer server(80);       // HTTP Server (湲곗〈 ?좎?)
 
-// === TCP 클라이언트용 ===
-const char* tcpServerIP   = "183.101.110.160";  // KT 공유기 공인 IP
-const uint16_t tcpServerPort = 6000;            // 포트포워딩된 포트
+// === TCP ?대씪?댁뼵?몄슜 ===
+const char* tcpServerIP   = "183.101.110.160";  // KT 怨듭쑀湲?怨듭씤 IP
+const uint16_t tcpServerPort = 6000;            // ?ы듃?ъ썙?⑸맂 ?ы듃
 WiFiClient   tcpClient;
 
 void setup() {
@@ -27,7 +27,7 @@ void setup() {
   Serial.println("\nWIFI connected, IP: " + WiFi.localIP().toString());
   server.begin();
 
-  // KT 공유기 서버에 TCP 연결 시도
+  // KT 怨듭쑀湲??쒕쾭??TCP ?곌껐 ?쒕룄
   while (!tcpClient.connect(tcpServerIP, tcpServerPort)) {
     Serial.println("Trying to connect to KT Server...");
     delay(2000);
@@ -36,40 +36,39 @@ void setup() {
 }
 
 void loop() {
-  // ──────────────
+  // ??????????????
   // [Serial2 Loopback Echo]
-  // ──────────────
-  // MySerial(TX2→RX2 점퍼)로 들어오는 문자 읽어서
-  // USB 시리얼로 출력
+  // ??????????????
+  // MySerial(TX2?뭃X2 ?먰띁)濡??ㅼ뼱?ㅻ뒗 臾몄옄 ?쎌뼱??  // USB ?쒕━?쇰줈 異쒕젰
   if (MySerial.available()) {
     char c = MySerial.read();
     Serial.print("Loopback received on Serial2: ");
     Serial.println(c);
   }
 
-  // === [1] TCP 서버에서 명령 수신 ===
+  // === [1] TCP ?쒕쾭?먯꽌 紐낅졊 ?섏떊 ===
   if (tcpClient.connected() && tcpClient.available()) {
     String cmd = tcpClient.readStringUntil('\n');
     cmd.trim();
-    Serial.println("[TCP 수신 명령]: " + cmd);
+    Serial.println("[TCP ?섏떊 紐낅졊]: " + cmd);
 
     if (cmd.length() == 1) {
       char c = cmd.charAt(0);
       MySerial.write(c);
-      Serial.print("[UART 송신 → Serial2]: ");
+      Serial.print("[UART ?≪떊 ??Serial2]: ");
       Serial.println(c);
     }
   } else if (!tcpClient.connected()) {
-    Serial.println("[TCP 연결 끊김] 재연결 시도 중...");
+    Serial.println("[TCP ?곌껐 ?딄?] ?ъ뿰寃??쒕룄 以?..");
     tcpClient.connect(tcpServerIP, tcpServerPort);
     delay(2000);
   }
 
-  // === [2] HTTP 요청 처리 (기존 코드 유지) ===
+  // === [2] HTTP ?붿껌 泥섎━ (湲곗〈 肄붾뱶 ?좎?) ===
   WiFiClient client = server.available();
   if (!client) return;
 
-  Serial.println("\n[클라이언트 접속됨]");
+  Serial.println("\n[?대씪?댁뼵???묒냽??");
   client.setTimeout(5000);
 
   String requestLine = "";
@@ -120,10 +119,10 @@ void loop() {
 
   if (txChar != '\0') {
     MySerial.write(txChar);
-    Serial.print("[UART 송신 → Serial2]: ");
+    Serial.print("[UART ?≪떊 ??Serial2]: ");
     Serial.println(txChar);
   } else {
-    Serial.println("알 수 없는 명령: " + command);
+    Serial.println("?????녿뒗 紐낅졊: " + command);
   }
 
   client.println("HTTP/1.1 200 OK");
@@ -132,5 +131,7 @@ void loop() {
   client.println("Command received: " + command);
   client.stop();
 
-  Serial.println("[클라이언트 연결 종료]");
+  Serial.println("[?대씪?댁뼵???곌껐 醫낅즺]");
 }
+
+

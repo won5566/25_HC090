@@ -1,4 +1,4 @@
-/*
+﻿/*
  * ipcp.h - IP Control Protocol definitions.
  *
  * Copyright (c) 1984-2000 Carnegie Mellon University. All rights reserved.
@@ -132,3 +132,5 @@ extern const struct protent ipcp_protent;
 
 #endif /* IPCP_H */
 #endif /* PPP_SUPPORT && PPP_IPV4_SUPPORT */
+
+

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * 6LowPAN over BLE for IPv6 (RFC7668).
  */
@@ -76,3 +76,5 @@ void eui64_to_ble_addr(uint8_t *dst, const uint8_t *src);
 #endif /* LWIP_IPV6 */
 
 #endif /* LWIP_HDR_LOWPAN6_BLE_H */
+
+

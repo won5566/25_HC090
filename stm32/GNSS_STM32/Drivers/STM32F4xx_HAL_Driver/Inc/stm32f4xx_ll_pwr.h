@@ -1,4 +1,4 @@
-/**
+﻿/**
   ******************************************************************************
   * @file    stm32f4xx_ll_pwr.h
   * @author  MCD Application Team
@@ -983,3 +983,5 @@ ErrorStatus LL_PWR_DeInit(void);
 #endif
 
 #endif /* __STM32F4xx_LL_PWR_H */
+
+

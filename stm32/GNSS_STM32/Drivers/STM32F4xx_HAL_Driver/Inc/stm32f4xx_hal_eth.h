@@ -1,4 +1,4 @@
-/**
+﻿/**
   ******************************************************************************
   * @file    stm32f4xx_hal_eth.h
   * @author  MCD Application Team
@@ -2015,3 +2015,5 @@ uint32_t             HAL_ETH_GetMACWakeUpSource(const ETH_HandleTypeDef *heth);
 #endif
 
 #endif /* STM32F4xx_HAL_ETH_H */
+
+

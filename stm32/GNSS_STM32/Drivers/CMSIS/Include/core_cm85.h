@@ -1,4 +1,4 @@
-/**************************************************************************//**
+﻿/**************************************************************************//**
  * @file     core_cm85.h
  * @brief    CMSIS Cortex-M85 Core Peripheral Access Layer Header File
  * @version  V1.0.4
@@ -4670,3 +4670,5 @@ __STATIC_INLINE int32_t ITM_CheckChar (void)
 #endif /* __CORE_CM85_H_DEPENDANT */
 
 #endif /* __CMSIS_GENERIC */
+
+

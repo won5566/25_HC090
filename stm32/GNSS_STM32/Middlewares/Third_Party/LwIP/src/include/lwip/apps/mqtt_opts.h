@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * MQTT client options
  */
@@ -101,3 +101,5 @@ extern "C" {
 #endif
 
 #endif /* LWIP_HDR_APPS_MQTT_OPTS_H */
+
+

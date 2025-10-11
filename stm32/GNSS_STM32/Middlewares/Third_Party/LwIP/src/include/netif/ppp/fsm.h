@@ -1,4 +1,4 @@
-/*
+﻿/*
  * fsm.h - {Link, IP} Control Protocol Finite State Machine definitions.
  *
  * Copyright (c) 1984-2000 Carnegie Mellon University. All rights reserved.
@@ -180,3 +180,5 @@ void fsm_sdata(fsm *f, u_char code, u_char id, const u_char *data, int datalen);
 
 #endif /* FSM_H */
 #endif /* PPP_SUPPORT */
+
+

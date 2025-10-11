@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * IEEE assigned numbers
  *
@@ -89,3 +89,5 @@ enum lwip_ieee_eth_type {
 #endif
 
 #endif /* LWIP_HDR_PROT_IEEE_H */
+
+

@@ -1,4 +1,4 @@
-#include <Wire.h>
+﻿#include <Wire.h>
 
 // MPU-6050 register and helper definitions (from stabilizer_table_pid.ino)
 #define MPU6050_AUX_VDDIO          0x01
@@ -196,21 +196,20 @@ void setup() {
   TCCR1B = (1<<WGM13)|(1<<WGM12)|(1<<CS11);
   ICR1 = 39999;  // 20ms
 
-    // 1) 부팅 직후 원하는 “물리적” 시작 위치로 한 번 이동
-  const int INITIAL_POS_A = 10000;  // 예: 중립(약 90°)
+    // 1) 遺??吏곹썑 ?먰븯???쒕Ъ由ъ쟻???쒖옉 ?꾩튂濡???踰??대룞
+  const int INITIAL_POS_A = 10000;  // ?? 以묐┰(??90째)
   const int INITIAL_POS_B =-14000;
   OCR1A = INITIAL_POS_A;
   OCR1B = INITIAL_POS_B;
 
-  // 2) 잠시 대기 → MPU-6050이 안정된 값을 읽을 시간
+  // 2) ?좎떆 ?湲???MPU-6050???덉젙??媛믪쓣 ?쎌쓣 ?쒓컙
   delay(3000);
 
-  // 3) 센서 값을 한 번 읽어서, 이때의 각도를 “0 기준”으로 삼는다
-  MPU6050_data_read();
+  // 3) ?쇱꽌 媛믪쓣 ??踰??쎌뼱?? ?대븣??媛곷룄瑜??? 湲곗??앹쑝濡??쇰뒗??  MPU6050_data_read();
   init_angle_x = angle_x;
   init_angle_y = angle_y;
 
-  // 4) PID 누적 변수를 초기화 (선택)
+  // 4) PID ?꾩쟻 蹂?섎? 珥덇린??(?좏깮)
   error_sum_a = 0;
   error_sum_b = 0;
 }
@@ -248,3 +247,5 @@ void loop() {
   
   delay(50);
 }
+
+

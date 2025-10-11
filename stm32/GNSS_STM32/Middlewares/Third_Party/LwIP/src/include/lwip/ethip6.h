@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  *
  * Ethernet output for IPv6. Uses ND tables for link-layer addressing.
@@ -66,3 +66,5 @@ err_t ethip6_output(struct netif *netif, struct pbuf *q, const ip6_addr_t *ip6ad
 #endif /* LWIP_IPV6 && LWIP_ETHERNET */
 
 #endif /* LWIP_HDR_ETHIP6_H */
+
+

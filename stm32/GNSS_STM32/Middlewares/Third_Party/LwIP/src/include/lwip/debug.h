@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * Debug messages infrastructure
  */
@@ -159,3 +159,5 @@
 #endif /* LWIP_DEBUG */
 
 #endif /* LWIP_HDR_DEBUG_H */
+
+

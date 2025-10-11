@@ -1,4 +1,4 @@
-/**
+﻿/**
   ******************************************************************************
   * @file    stm32f4xx_ll_gpio.h
   * @author  MCD Application Team
@@ -978,4 +978,6 @@ void        LL_GPIO_StructInit(LL_GPIO_InitTypeDef *GPIO_InitStruct);
 #endif
 
 #endif /* __STM32F4xx_LL_GPIO_H */
+
+
 

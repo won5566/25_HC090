@@ -1,4 +1,4 @@
-/*
+﻿/*
  * eui64.h - EUI64 routines for IPv6CP.
  *
  * Copyright (c) 1999 Tommi Komulainen.  All rights reserved.
@@ -100,3 +100,5 @@ char *eui64_ntoa(eui64_t);	/* Returns ascii representation of id */
 
 #endif /* EUI64_H */
 #endif /* PPP_SUPPORT && PPP_IPV6_SUPPORT */
+
+

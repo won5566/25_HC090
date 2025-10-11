@@ -1,4 +1,4 @@
-/**
+﻿/**
   ******************************************************************************
   * @file    stm32f4xx_ll_system.h
   * @author  MCD Application Team
@@ -1707,5 +1707,7 @@ __STATIC_INLINE void LL_FLASH_DisableDataCacheReset(void)
 #endif
 
 #endif /* __STM32F4xx_LL_SYSTEM_H */
+
+
 
 

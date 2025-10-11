@@ -1,4 +1,4 @@
-/**
+﻿/**
   ******************************************************************************
   * @file    stm32f4xx_hal_cortex.h
   * @author  MCD Application Team
@@ -407,4 +407,6 @@ void HAL_CORTEX_ClearEvent(void);
 
 #endif /* __STM32F4xx_HAL_CORTEX_H */
  
+
+
 

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * Application layered TCP connection API (to be used from TCPIP thread)\n
  * This interface mimics the tcp callback API to the application while preventing
@@ -70,3 +70,5 @@ struct altcp_pcb *altcp_tcp_wrap(struct tcp_pcb *tpcb);
 #endif /* LWIP_ALTCP */
 
 #endif /* LWIP_HDR_ALTCP_TCP_H */
+
+

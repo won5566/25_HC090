@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * DNS - host name to IP address resolver.
  */
@@ -138,3 +138,5 @@ PACK_STRUCT_END
 #endif
 
 #endif /* LWIP_HDR_PROT_DNS_H */
+
+

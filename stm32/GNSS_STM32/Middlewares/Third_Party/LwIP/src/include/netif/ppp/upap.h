@@ -1,4 +1,4 @@
-/*
+﻿/*
  * upap.h - User/Password Authentication Protocol definitions.
  *
  * Copyright (c) 1984-2000 Carnegie Mellon University. All rights reserved.
@@ -129,3 +129,5 @@ extern const struct protent pap_protent;
 
 #endif /* UPAP_H */
 #endif /* PPP_SUPPORT && PAP_SUPPORT */
+
+

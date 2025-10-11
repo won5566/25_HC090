@@ -1,4 +1,4 @@
-/**
+﻿/**
   ******************************************************************************
   * @file    stm32f4xx_hal_tim.h
   * @author  MCD Application Team
@@ -2153,3 +2153,5 @@ void TIM_ResetCallback(TIM_HandleTypeDef *htim);
 #endif
 
 #endif /* STM32F4xx_HAL_TIM_H */
+
+

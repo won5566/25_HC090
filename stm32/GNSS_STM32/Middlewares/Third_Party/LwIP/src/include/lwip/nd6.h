@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  *
  * Neighbor discovery and stateless address autoconfiguration for IPv6.
@@ -88,3 +88,5 @@ void nd6_restart_netif(struct netif *netif);
 #endif /* LWIP_IPV6 */
 
 #endif /* LWIP_HDR_ND6_H */
+
+

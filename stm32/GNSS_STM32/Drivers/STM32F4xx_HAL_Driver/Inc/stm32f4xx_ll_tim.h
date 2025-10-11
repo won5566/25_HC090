@@ -1,4 +1,4 @@
-/**
+﻿/**
   ******************************************************************************
   * @file    stm32f4xx_ll_tim.h
   * @author  MCD Application Team
@@ -4094,3 +4094,5 @@ ErrorStatus LL_TIM_BDTR_Init(TIM_TypeDef *TIMx, const LL_TIM_BDTR_InitTypeDef *T
 #endif
 
 #endif /* __STM32F4xx_LL_TIM_H */
+
+

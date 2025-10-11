@@ -1,11 +1,11 @@
-# ESP32 Firmware — GNSS-Based Remote Steering Bridge
+﻿# ESP32 Firmware ??GNSS-Based Remote Steering Bridge
 
-This directory contains the **ESP32 firmware** that serves as a **TCP–UART bridge**
+This directory contains the **ESP32 firmware** that serves as a **TCP?밬ART bridge**
 between the Flask server (Python) and the STM32 main controller.
 
 ---
 
-## 🧠 Overview
+## ?쭬 Overview
 
 The ESP32 acts as a **middle communication layer**:
 - Receives TCP commands from the Flask server (port 5001)
@@ -15,7 +15,7 @@ The ESP32 acts as a **middle communication layer**:
 
 ---
 
-## ⚙️ System Configuration
+## ?숋툘 System Configuration
 
 | Interface | Purpose | Default Pin |
 |------------|----------|-------------|
@@ -26,7 +26,7 @@ The ESP32 acts as a **middle communication layer**:
 
 ---
 
-## 🧩 Firmware Behavior
+## ?㎥ Firmware Behavior
 
 1. **Wi-Fi Initialization**  
    ESP32 connects to a predefined SSID and starts a TCP server.
@@ -44,7 +44,7 @@ The ESP32 acts as a **middle communication layer**:
 
 ---
 
-## 🛠️ Build & Flash
+## ?썱截?Build & Flash
 
 1. Open **Arduino IDE**  
 2. Select:
@@ -57,17 +57,18 @@ The ESP32 acts as a **middle communication layer**:
    const char* pass = "YOUR_PASS";
 Upload to the board.
 
-🔍 Flask ↔ ESP32 Protocol
+?뵇 Flask ??ESP32 Protocol
 From	To	Example	Description
 Flask	ESP32	FWD\n	Command to move forward
 Flask	ESP32	STEER:45\n	Set steering angle
 ESP32	Flask	ACK:FWD	Acknowledgement
 ESP32	STM32	FWD\n	Forwarded UART command
 
-📶 Typical Connection Flow
-[App Inventor] → [Flask Server (Python)] → TCP → [ESP32] → UART → [STM32]
-👨‍💻 Author
-Team L&K — GNSS-Based Remote Steering Robot
-Firmware: 이원무 (ESP32 bridge communication)
+?벛 Typical Connection Flow
+[App Inventor] ??[Flask Server (Python)] ??TCP ??[ESP32] ??UART ??[STM32]
+?뫅?랅윊?Author
+Team KLON ??GNSS-Based Remote Steering Robot
+Firmware: ?댁썝臾?(ESP32 bridge communication)
 
 Last updated: 2025-10-11
+

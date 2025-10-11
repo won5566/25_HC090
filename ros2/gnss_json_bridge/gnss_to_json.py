@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 import json
 import os
 from datetime import datetime, timezone
@@ -54,3 +54,5 @@ def main(args=None):
 
 if __name__ == "__main__":
     main()
+
+

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * Ethernet input function - handles INCOMING ethernet level traffic
  * To be used in most low-level netif implementations
@@ -75,3 +75,5 @@ extern const struct eth_addr ethbroadcast, ethzero;
 #endif
 
 #endif /* LWIP_HDR_NETIF_ETHERNET_H */
+
+

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * lwIP internal memory pools (do not use in application code)
  * This file is deliberately included multiple times: once with empty
@@ -151,3 +151,5 @@ LWIP_PBUF_MEMPOOL(PBUF_POOL, PBUF_POOL_SIZE,           PBUF_POOL_BUFSIZE,       
 #undef LWIP_MALLOC_MEMPOOL_START
 #undef LWIP_MALLOC_MEMPOOL_END
 #undef LWIP_PBUF_MEMPOOL
+
+

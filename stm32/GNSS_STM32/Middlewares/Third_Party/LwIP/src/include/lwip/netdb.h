@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * NETDB API (sockets)
  */
@@ -148,3 +148,5 @@ int lwip_getaddrinfo(const char *nodename,
 #endif /* LWIP_DNS && LWIP_SOCKET */
 
 #endif /* LWIP_HDR_NETDB_H */
+
+

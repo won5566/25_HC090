@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * Interface Identification APIs from:
  *              RFC 3493: Basic Socket Interface Extensions for IPv6
@@ -66,3 +66,5 @@ unsigned int lwip_if_nametoindex(const char *ifname);
 #endif /* LWIP_SOCKET */
 
 #endif /* LWIP_HDR_IF_H */
+
+

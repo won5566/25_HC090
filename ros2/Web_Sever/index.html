@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify
+﻿from flask import Flask, render_template, jsonify
 import json
 import os
 
@@ -23,3 +23,5 @@ def get_position():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
+
+

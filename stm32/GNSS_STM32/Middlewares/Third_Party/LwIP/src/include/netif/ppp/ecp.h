@@ -1,4 +1,4 @@
-/*
+﻿/*
  * ecp.h - Definitions for PPP Encryption Control Protocol.
  *
  * Copyright (c) 2002 Google, Inc.
@@ -60,3 +60,5 @@ extern const struct protent ecp_protent;
 
 #endif /* ECP_H */
 #endif /* PPP_SUPPORT && ECP_SUPPORT */
+
+

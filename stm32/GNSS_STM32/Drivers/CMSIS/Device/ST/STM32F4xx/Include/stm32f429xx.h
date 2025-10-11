@@ -1,4 +1,4 @@
-/**
+﻿/**
   ******************************************************************************
   * @file    stm32f429xx.h
   * @author  MCD Application Team
@@ -17186,3 +17186,5 @@ typedef struct
 #endif /* __cplusplus */
 
 #endif /* __STM32F429xx_H */
+
+

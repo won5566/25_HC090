@@ -1,4 +1,4 @@
-/* USER CODE BEGIN Header */
+﻿/* USER CODE BEGIN Header */
 /**
   ******************************************************************************
   * @file    stm32f4xx_it.h
@@ -67,3 +67,5 @@ void USART6_IRQHandler(void);
 #endif
 
 #endif /* __STM32F4xx_IT_H */
+
+

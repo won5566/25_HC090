@@ -1,4 +1,4 @@
-/*
+﻿/*
  * chap_ms.h - Challenge Handshake Authentication Protocol definitions.
  *
  * Copyright (c) 1995 Eric Rosenquist.  All rights reserved.
@@ -42,3 +42,5 @@ extern const struct chap_digest_type chapms2_digest;
 #endif /* CHAPMS_INCLUDE */
 
 #endif /* PPP_SUPPORT && MSCHAP_SUPPORT */
+
+

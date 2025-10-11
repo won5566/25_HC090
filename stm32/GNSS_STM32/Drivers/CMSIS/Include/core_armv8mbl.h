@@ -1,4 +1,4 @@
-/**************************************************************************//**
+﻿/**************************************************************************//**
  * @file     core_armv8mbl.h
  * @brief    CMSIS Armv8-M Baseline Core Peripheral Access Layer Header File
  * @version  V5.1.0
@@ -2220,3 +2220,5 @@ __STATIC_INLINE uint32_t TZ_SysTick_Config_NS(uint32_t ticks)
 #endif /* __CORE_ARMV8MBL_H_DEPENDANT */
 
 #endif /* __CMSIS_GENERIC */
+
+

@@ -1,12 +1,12 @@
-```markdown
-# Flask Server — GNSS-Based Remote Control Bridge
+﻿```markdown
+# Flask Server ??GNSS-Based Remote Control Bridge
 
 This directory hosts the **Python Flask application** that manages
 remote communication between the App Inventor interface and the ESP32 module.
 
 ---
 
-## 🧠 Overview
+## ?쭬 Overview
 
 The Flask server:
 - Provides REST API endpoints for App Inventor  
@@ -16,7 +16,7 @@ The Flask server:
 
 ---
 
-## ⚙️ Architecture
+## ?숋툘 Architecture
 
 | Layer | Role | Folder |
 |-------|------|--------|
@@ -27,7 +27,7 @@ The Flask server:
 
 ---
 
-## 🧩 REST API Summary
+## ?㎥ REST API Summary
 
 | Method | Endpoint | Description |
 |--------|-----------|-------------|
@@ -42,16 +42,16 @@ Example request (from App Inventor):
   "token": "changeme-robot",
   "cmd": "FWD"
 }
-🧰 File Structure
+?㎞ File Structure
 server/
-├── app/
-│   ├── GNSS_SERVER.py        # Flask main app
-│   ├── services/
-│   │   └── tcp_client.py     # TCP communication with ESP32
-│   └── templates/            # (optional) HTML UI templates
-├── requirements.txt
-└── README.md
-🧾 TCP Connection Details
+?쒋?? app/
+??  ?쒋?? GNSS_SERVER.py        # Flask main app
+??  ?쒋?? services/
+??  ??  ?붴?? tcp_client.py     # TCP communication with ESP32
+??  ?붴?? templates/            # (optional) HTML UI templates
+?쒋?? requirements.txt
+?붴?? README.md
+?㎨ TCP Connection Details
 ESP32 Host: 192.168.0.xx (set in tcp_client.py)
 
 Port: 5001
@@ -60,9 +60,9 @@ Timeout: 1.5 sec
 
 Protocol: Plain text with \n line ending
 
-Each Flask POST → triggers TCP send → waits for "ACK" from ESP32.
+Each Flask POST ??triggers TCP send ??waits for "ACK" from ESP32.
 
-🚀 How to Run
+?? How to Run
 Install dependencies:
 
 cd server
@@ -76,22 +76,23 @@ App Inventor endpoint:
 
 arduino
 http://<SERVER_IP>:8080/api/cmd
-⚠️ Security
+?좑툘 Security
 Uses static token (API_TOKEN = "changeme-robot") for API calls
 
 Add simple authentication or network whitelist if needed
 
 For external access, configure ngrok or port forwarding
 
-🔗 Related Layers
+?뵕 Related Layers
 ESP32 Firmware
 
 STM32 Firmware
 
 ROS2 Integration
 
-👨‍💻 Author
-Team L&K — Korea University of Technology and Education
-Software: 이원무 (Python Flask server & control bridge)
+?뫅?랅윊?Author
+Team KLON ??Korea University of Technology and Education
+Software: ?댁썝臾?(Python Flask server & control bridge)
 
 Last updated: 2025-10-11
+

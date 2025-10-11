@@ -1,4 +1,4 @@
-/**
+﻿/**
   ******************************************************************************
   * @file    stm32f4xx_hal_rcc.h
   * @author  MCD Application Team
@@ -1455,4 +1455,6 @@ void HAL_RCC_CSSCallback(void);
 #endif
 
 #endif /* __STM32F4xx_HAL_RCC_H */
+
+
 

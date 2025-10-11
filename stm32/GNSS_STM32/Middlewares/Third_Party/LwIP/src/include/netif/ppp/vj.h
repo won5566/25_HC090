@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Definitions for tcp compression routines.
  *
  * $Id: vj.h,v 1.7 2010/02/22 17:52:09 goldsimon Exp $
@@ -167,3 +167,5 @@ extern int   vj_uncompress_tcp   (struct pbuf **nb, struct vjcompress *comp);
 #endif /* VJ_H */
 
 #endif /* PPP_SUPPORT && VJ_SUPPORT */
+
+

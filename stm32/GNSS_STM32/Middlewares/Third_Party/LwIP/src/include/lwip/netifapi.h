@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * netif API (to be used from non-TCPIP threads)
  */
@@ -159,3 +159,5 @@ err_t netifapi_netif_index_to_name(u8_t index, char *name);
 #endif /* LWIP_NETIF_API */
 
 #endif /* LWIP_HDR_NETIFAPI_H */
+
+

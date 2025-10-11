@@ -1,4 +1,4 @@
-#ifndef LWIP_HDR_APPS_SMTP_H
+﻿#ifndef LWIP_HDR_APPS_SMTP_H
 #define LWIP_HDR_APPS_SMTP_H
 
 #ifdef __cplusplus
@@ -126,3 +126,5 @@ const char* smtp_result_str(u8_t smtp_result);
 #endif
 
 #endif /* LWIP_HDR_APPS_SMTP_H */
+
+

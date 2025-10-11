@@ -1,4 +1,4 @@
-/**
+﻿/**
   ******************************************************************************
   * @file    stm32f4xx_hal_pwr.h
   * @author  MCD Application Team
@@ -434,3 +434,5 @@ void HAL_PWR_DisableSEVOnPend(void);
 
 
 #endif /* __STM32F4xx_HAL_PWR_H */
+
+

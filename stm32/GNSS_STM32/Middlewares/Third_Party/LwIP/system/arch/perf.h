@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Copyright (c) 2001-2003 Swedish Institute of Computer Science.
  * All rights reserved. 
  * 
@@ -36,3 +36,5 @@
 #define PERF_STOP(x)  /* null definition */
 
 #endif /* __PERF_H__ */
+
+

@@ -1,4 +1,4 @@
-/**************************************************************************//**
+﻿/**************************************************************************//**
  * @file     core_armv81mml.h
  * @brief    CMSIS Armv8.1-M Mainline Core Peripheral Access Layer Header File
  * @version  V1.4.2
@@ -4226,3 +4226,5 @@ __STATIC_INLINE int32_t ITM_CheckChar (void)
 #endif /* __CORE_ARMV81MML_H_DEPENDANT */
 
 #endif /* __CMSIS_GENERIC */
+
+

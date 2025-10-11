@@ -1,10 +1,10 @@
-/**
+﻿/**
  * @file
  * SNTP client API
  */
 
 /*
- * Copyright (c) 2007-2009 Frédéric Bernon, Simon Goldschmidt
+ * Copyright (c) 2007-2009 Fr챕d챕ric Bernon, Simon Goldschmidt
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without modification,
@@ -31,7 +31,7 @@
  *
  * This file is part of the lwIP TCP/IP stack.
  *
- * Author: Frédéric Bernon, Simon Goldschmidt
+ * Author: Fr챕d챕ric Bernon, Simon Goldschmidt
  *
  */
 #ifndef LWIP_HDR_APPS_SNTP_H
@@ -78,3 +78,5 @@ void sntp_servermode_dhcp(int set_servers_from_dhcp);
 #endif
 
 #endif /* LWIP_HDR_APPS_SNTP_H */
+
+

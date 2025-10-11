@@ -1,4 +1,4 @@
-/**
+﻿/**
  *
  * @file tftp_opts.h
  *
@@ -104,3 +104,5 @@
  */
 
 #endif /* LWIP_HDR_APPS_TFTP_OPTS_H */
+
+

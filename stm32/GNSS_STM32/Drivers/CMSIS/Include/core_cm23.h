@@ -1,4 +1,4 @@
-/**************************************************************************//**
+﻿/**************************************************************************//**
  * @file     core_cm23.h
  * @brief    CMSIS Cortex-M23 Core Peripheral Access Layer Header File
  * @version  V5.1.0
@@ -2295,3 +2295,5 @@ __STATIC_INLINE uint32_t TZ_SysTick_Config_NS(uint32_t ticks)
 #endif /* __CORE_CM23_H_DEPENDANT */
 
 #endif /* __CMSIS_GENERIC */
+
+

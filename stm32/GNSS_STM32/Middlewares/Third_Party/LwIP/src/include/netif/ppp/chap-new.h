@@ -1,4 +1,4 @@
-/*
+﻿/*
  * chap-new.c - New CHAP implementation.
  *
  * Copyright (c) 2003 Paul Mackerras. All rights reserved.
@@ -198,3 +198,5 @@ extern const struct protent chap_protent;
 
 #endif /* CHAP_H */
 #endif /* PPP_SUPPORT && CHAP_SUPPORT */
+
+

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * NETBIOS name service responder
  */
@@ -49,3 +49,5 @@ void netbiosns_stop(void);
 #endif
 
 #endif /* LWIP_HDR_APPS_NETBIOS_H */
+
+

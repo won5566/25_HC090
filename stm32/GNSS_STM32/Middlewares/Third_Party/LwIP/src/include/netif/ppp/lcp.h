@@ -1,4 +1,4 @@
-/*
+﻿/*
  * lcp.h - Link Control Protocol definitions.
  *
  * Copyright (c) 1984-2000 Carnegie Mellon University. All rights reserved.
@@ -177,3 +177,5 @@ extern const struct protent lcp_protent;
 
 #endif /* LCP_H */
 #endif /* PPP_SUPPORT */
+
+

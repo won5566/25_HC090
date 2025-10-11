@@ -1,4 +1,4 @@
-/**
+﻿/**
   ******************************************************************************
   * @file    stm32f4xx_ll_utils.h
   * @author  MCD Application Team
@@ -305,3 +305,5 @@ ErrorStatus LL_PLL_ConfigSystemClock_HSE(uint32_t HSEFrequency, uint32_t HSEBypa
 #endif
 
 #endif /* __STM32F4xx_LL_UTILS_H */
+
+

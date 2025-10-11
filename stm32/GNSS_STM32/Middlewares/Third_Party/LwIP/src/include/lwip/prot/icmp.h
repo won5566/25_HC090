@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * ICMP protocol definitions
  */
@@ -89,3 +89,5 @@ PACK_STRUCT_END
 #endif
 
 #endif /* LWIP_HDR_PROT_ICMP_H */
+
+

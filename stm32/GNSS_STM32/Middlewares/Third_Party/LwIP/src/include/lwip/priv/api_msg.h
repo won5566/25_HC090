@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * netconn API lwIP internal implementations (do not use in application code)
  */
@@ -270,3 +270,5 @@ struct netifapi_msg {
 #endif
 
 #endif /* LWIP_HDR_API_MSG_H */
+
+

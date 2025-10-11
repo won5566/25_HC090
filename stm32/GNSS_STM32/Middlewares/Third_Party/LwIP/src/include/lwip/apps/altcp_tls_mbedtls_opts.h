@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * Application layered TCP/TLS connection API (to be used from TCPIP thread)
  *
@@ -65,3 +65,5 @@
 #endif /* LWIP_ALTCP */
 
 #endif /* LWIP_HDR_ALTCP_TLS_OPTS_H */
+
+

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * DNS API
  */
@@ -129,3 +129,5 @@ err_t          dns_local_addhost(const char *hostname, const ip_addr_t *addr);
 #endif /* LWIP_DNS */
 
 #endif /* LWIP_HDR_DNS_H */
+
+

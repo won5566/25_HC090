@@ -1,4 +1,4 @@
-/*
+﻿/*
  * eap.h - Extensible Authentication Protocol for PPP (RFC 2284)
  *
  * Copyright (c) 2001 by Sun Microsystems, Inc.
@@ -167,3 +167,5 @@ extern const struct protent eap_protent;
 #endif /* PPP_EAP_H */
 
 #endif /* PPP_SUPPORT && EAP_SUPPORT */
+
+

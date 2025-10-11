@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * IP checksum calculation functions
  */
@@ -102,4 +102,6 @@ u16_t ip_chksum_pseudo_partial(struct pbuf *p, u8_t proto, u16_t proto_len,
 #endif
 
 #endif /* LWIP_HDR_INET_H */
+
+
 

@@ -1,4 +1,4 @@
-/*
+﻿/*
  * ccp.h - Definitions for PPP Compression Control Protocol.
  *
  * Copyright (c) 1994-2002 Paul Mackerras. All rights reserved.
@@ -162,3 +162,5 @@ void ccp_resetrequest(ppp_pcb *pcb);  /* Issue a reset-request. */
 
 #endif /* CCP_H */
 #endif /* PPP_SUPPORT && CCP_SUPPORT */
+
+

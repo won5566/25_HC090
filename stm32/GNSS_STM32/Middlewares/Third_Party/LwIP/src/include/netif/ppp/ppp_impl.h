@@ -1,4 +1,4 @@
-/*****************************************************************************
+﻿/*****************************************************************************
 * ppp.h - Network Point to Point Protocol header file.
 *
 * Copyright (c) 2003 by Marc Boucher, Services Informatiques (MBSI) inc.
@@ -720,3 +720,5 @@ void ppp_dump_packet(ppp_pcb *pcb, const char *tag, unsigned char *p, int len);
 
 #endif /* PPP_SUPPORT */
 #endif /* LWIP_HDR_PPP_IMPL_H */
+
+

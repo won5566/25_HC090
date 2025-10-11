@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Copyright (c) 2001-2003 Swedish Institute of Computer Science.
  * All rights reserved.
  *
@@ -69,4 +69,6 @@ typedef osThreadId_t        sys_thread_t;
 #endif
 
 #endif /* __SYS_ARCH_H__ */
+
+
 

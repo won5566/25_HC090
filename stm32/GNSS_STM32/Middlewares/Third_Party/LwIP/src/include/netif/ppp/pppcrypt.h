@@ -1,4 +1,4 @@
-/*
+﻿/*
  * pppcrypt.c - PPP/DES linkage for MS-CHAP and EAP SRP-SHA1
  *
  * Extracted from chap_ms.c by James Carlson.
@@ -142,3 +142,5 @@ void pppcrypt_56_to_64_bit_key(u_char *key, u_char *des_key);
 #endif /* PPPCRYPT_H */
 
 #endif /* PPP_SUPPORT */
+
+

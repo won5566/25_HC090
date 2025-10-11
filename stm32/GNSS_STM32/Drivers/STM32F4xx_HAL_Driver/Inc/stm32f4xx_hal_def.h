@@ -1,4 +1,4 @@
-/**
+﻿/**
   ******************************************************************************
   * @file    stm32f4xx_hal_def.h
   * @author  MCD Application Team
@@ -208,5 +208,7 @@ typedef enum
 #endif
 
 #endif /* ___STM32F4xx_HAL_DEF */
+
+
 
 

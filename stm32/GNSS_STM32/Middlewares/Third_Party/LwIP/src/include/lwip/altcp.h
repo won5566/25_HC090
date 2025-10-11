@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * Application layered TCP connection API (to be used from TCPIP thread)\n
  *
@@ -199,3 +199,5 @@ enum tcp_state altcp_dbg_get_tcp_state(struct altcp_pcb *conn);
 #endif /* LWIP_ALTCP */
 
 #endif /* LWIP_HDR_ALTCP_H */
+
+

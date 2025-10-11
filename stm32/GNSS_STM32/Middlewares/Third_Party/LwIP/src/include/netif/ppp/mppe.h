@@ -1,4 +1,4 @@
-/*
+﻿/*
  * mppe.h - Definitions for MPPE
  *
  * Copyright (c) 2008 Paul Mackerras. All rights reserved.
@@ -179,3 +179,5 @@ err_t mppe_decompress(ppp_pcb *pcb, ppp_mppe_state *state, struct pbuf **pb);
 
 #endif /* MPPE_H */
 #endif /* PPP_SUPPORT && MPPE_SUPPORT */
+
+

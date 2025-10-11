@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * HTTP client
  */
@@ -158,3 +158,5 @@ err_t httpc_get_file_dns_to_disk(const char* server_name, u16_t port, const char
 #endif /* LWIP_TCP && LWIP_CALLBACK_API */
 
 #endif /* LWIP_HDR_APPS_HTTP_CLIENT_H */
+
+

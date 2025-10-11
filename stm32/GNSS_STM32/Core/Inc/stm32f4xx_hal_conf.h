@@ -1,4 +1,4 @@
-/* USER CODE BEGIN Header */
+﻿/* USER CODE BEGIN Header */
 /**
   ******************************************************************************
   * @file    stm32f4xx_hal_conf_template.h
@@ -502,3 +502,5 @@
 #endif
 
 #endif /* __STM32F4xx_HAL_CONF_H */
+
+

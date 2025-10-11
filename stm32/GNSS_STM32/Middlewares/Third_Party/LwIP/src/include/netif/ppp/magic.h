@@ -1,4 +1,4 @@
-/*
+﻿/*
  * magic.h - PPP Magic Number definitions.
  *
  * Copyright (c) 1984-2000 Carnegie Mellon University. All rights reserved.
@@ -128,3 +128,5 @@ u32_t magic_pow(u8_t pow);
 #endif /* MAGIC_H */
 
 #endif /* PPP_SUPPORT */
+
+

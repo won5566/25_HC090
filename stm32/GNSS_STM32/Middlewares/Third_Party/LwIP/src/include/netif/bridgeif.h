@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * lwIP netif implementing an IEEE 802.1D MAC Bridge
  */
@@ -125,3 +125,5 @@ void*               bridgeif_fdb_init(u16_t max_fdb_entries);
 #endif
 
 #endif /* LWIP_HDR_NETIF_BRIDGEIF_H */
+
+

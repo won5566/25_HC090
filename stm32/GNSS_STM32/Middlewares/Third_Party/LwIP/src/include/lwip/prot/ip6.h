@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * IPv6 protocol definitions
  */
@@ -231,3 +231,5 @@ PACK_STRUCT_END
 #endif
 
 #endif /* LWIP_HDR_PROT_IP6_H */
+
+

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * Support for different processor and compiler architectures
  */
@@ -391,3 +391,5 @@ extern "C" {
 #endif
 
 #endif /* LWIP_HDR_ARCH_H */
+
+

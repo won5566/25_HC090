@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * SNMP server MIB API to implement thread synchronization
  */
@@ -112,3 +112,5 @@ void snmp_threadsync_init(struct snmp_threadsync_instance *instance, snmp_thread
 #endif
 
 #endif /* LWIP_HDR_APPS_SNMP_THREADSYNC_H */
+
+

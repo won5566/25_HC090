@@ -1,4 +1,4 @@
-/*
+﻿/*
  * ipv6cp.h - PPP IPV6 Control Protocol.
  *
  * Copyright (c) 1999 Tommi Komulainen.  All rights reserved.
@@ -44,30 +44,30 @@
     Alain.Durand@imag.fr, IMAG,
     Jean-Luc.Richier@imag.fr, IMAG-LSR.
 
-    Ce travail a été fait au sein du GIE DYADE (Groupement d'Intérêt
-    Économique ayant pour membres BULL S.A. et l'INRIA).
+    Ce travail a 챕t챕 fait au sein du GIE DYADE (Groupement d'Int챕r챗t
+    횋conomique ayant pour membres BULL S.A. et l'INRIA).
 
     Ce logiciel informatique est disponible aux conditions
-    usuelles dans la recherche, c'est-à-dire qu'il peut
-    être utilisé, copié, modifié, distribué à l'unique
-    condition que ce texte soit conservé afin que
+    usuelles dans la recherche, c'est-횪-dire qu'il peut
+    챗tre utilis챕, copi챕, modifi챕, distribu챕 횪 l'unique
+    condition que ce texte soit conserv챕 afin que
     l'origine de ce logiciel soit reconnue.
 
     Le nom de l'Institut National de Recherche en Informatique
     et en Automatique (INRIA), de l'IMAG, ou d'une personne morale
-    ou physique ayant participé à l'élaboration de ce logiciel ne peut
-    être utilisé sans son accord préalable explicite.
+    ou physique ayant particip챕 횪 l'챕laboration de ce logiciel ne peut
+    챗tre utilis챕 sans son accord pr챕alable explicite.
 
     Ce logiciel est fourni tel quel sans aucune garantie,
-    support ou responsabilité d'aucune sorte.
-    Ce logiciel est dérivé de sources d'origine
+    support ou responsabilit챕 d'aucune sorte.
+    Ce logiciel est d챕riv챕 de sources d'origine
     "University of California at Berkeley" et
     "Digital Equipment Corporation" couvertes par des copyrights.
 
-    L'Institut d'Informatique et de Mathématiques Appliquées de Grenoble (IMAG)
-    est une fédération d'unités mixtes de recherche du CNRS, de l'Institut National
-    Polytechnique de Grenoble et de l'Université Joseph Fourier regroupant
-    sept laboratoires dont le laboratoire Logiciels, Systèmes, Réseaux (LSR).
+    L'Institut d'Informatique et de Math챕matiques Appliqu챕es de Grenoble (IMAG)
+    est une f챕d챕ration d'unit챕s mixtes de recherche du CNRS, de l'Institut National
+    Polytechnique de Grenoble et de l'Universit챕 Joseph Fourier regroupant
+    sept laboratoires dont le laboratoire Logiciels, Syst챔mes, R챕seaux (LSR).
 
     This work has been done in the context of GIE DYADE (joint R & D venture
     between BULL S.A. and INRIA).
@@ -189,3 +189,5 @@ extern const struct protent ipv6cp_protent;
 
 #endif /* IPV6CP_H */
 #endif /* PPP_SUPPORT && PPP_IPV6_SUPPORT */
+
+

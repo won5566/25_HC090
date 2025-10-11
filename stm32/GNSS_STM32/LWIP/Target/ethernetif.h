@@ -1,4 +1,4 @@
-/* USER CODE BEGIN Header */
+﻿/* USER CODE BEGIN Header */
 /**
  ******************************************************************************
   * File Name          : ethernetif.h
@@ -43,3 +43,5 @@ u32_t sys_now(void);
 
 /* USER CODE END 1 */
 #endif
+
+

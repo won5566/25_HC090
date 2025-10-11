@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  *
  * DHCPv6 client: IPv6 address autoconfiguration as per
@@ -102,3 +102,5 @@ extern void dhcp6_set_ntp_servers(u8_t num_ntp_servers, const ip_addr_t* ntp_ser
 #endif /* LWIP_IPV6_DHCP6 */
 
 #endif /* LWIP_HDR_IP6_DHCP6_H */
+
+

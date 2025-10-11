@@ -1,4 +1,4 @@
-/**************************************************************************//**
+﻿/**************************************************************************//**
  * @file     core_cm35p.h
  * @brief    CMSIS Cortex-M35P Core Peripheral Access Layer Header File
  * @version  V1.1.3
@@ -3275,3 +3275,5 @@ __STATIC_INLINE int32_t ITM_CheckChar (void)
 #endif /* __CORE_CM35P_H_DEPENDANT */
 
 #endif /* __CMSIS_GENERIC */
+
+

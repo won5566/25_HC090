@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * Definitions for IEEE 802.15.4 MAC frames
  */
@@ -110,3 +110,5 @@ PACK_STRUCT_END
 #endif
 
 #endif /* LWIP_HDR_NETIF_IEEE802154_H */
+
+

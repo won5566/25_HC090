@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Copyright (c) 2001-2003 Swedish Institute of Computer Science.
  * All rights reserved. 
  * 
@@ -38,6 +38,8 @@ void tcpip_init_done(void *);
 int wait_for_tcpip_init(void);
 
 #endif /* __ARCH_INIT_H__ */
+
+
 
 
 

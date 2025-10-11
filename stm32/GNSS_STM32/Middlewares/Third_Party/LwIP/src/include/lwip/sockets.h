@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * Socket API (to be used from non-TCPIP threads)
  */
@@ -686,3 +686,5 @@ int lwip_inet_pton(int af, const char *src, void *dst);
 #endif /* LWIP_SOCKET */
 
 #endif /* LWIP_HDR_SOCKETS_H */
+
+

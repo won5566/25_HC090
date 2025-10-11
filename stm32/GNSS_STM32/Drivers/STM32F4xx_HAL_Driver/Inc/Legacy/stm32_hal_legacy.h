@@ -1,4 +1,4 @@
-/**
+﻿/**
   ******************************************************************************
   * @file    stm32_hal_legacy.h
   * @author  MCD Application Team
@@ -4355,5 +4355,7 @@ extern "C" {
 #endif
 
 #endif /* STM32_HAL_LEGACY */
+
+
 
 

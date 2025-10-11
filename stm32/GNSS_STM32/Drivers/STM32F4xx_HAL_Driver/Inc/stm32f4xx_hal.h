@@ -1,4 +1,4 @@
-/**
+﻿/**
   ******************************************************************************
   * @file    stm32f4xx_hal.h
   * @author  MCD Application Team
@@ -293,5 +293,7 @@ void HAL_DisableMemorySwappingBank(void);
 #endif
 
 #endif /* __STM32F4xx_HAL_H */
+
+
 
 

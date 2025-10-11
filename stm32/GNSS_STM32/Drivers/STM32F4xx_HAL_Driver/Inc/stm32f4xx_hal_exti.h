@@ -1,4 +1,4 @@
-/**
+﻿/**
   ******************************************************************************
   * @file    stm32f4xx_hal_exti.h
   * @author  MCD Application Team
@@ -363,4 +363,6 @@ void HAL_EXTI_GenerateSWI(EXTI_HandleTypeDef *hexti);
 #endif
 
 #endif /* STM32f4xx_HAL_EXTI_H */
+
+
 

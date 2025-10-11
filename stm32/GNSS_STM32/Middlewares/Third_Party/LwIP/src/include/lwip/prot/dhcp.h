@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * DHCP protocol definitions
  */
@@ -176,3 +176,5 @@ typedef enum {
 #endif
 
 #endif /* LWIP_HDR_PROT_DHCP_H */
+
+

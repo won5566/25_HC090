@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * IPv4 address API
  */
@@ -214,3 +214,5 @@ char *ip4addr_ntoa_r(const ip4_addr_t *addr, char *buf, int buflen);
 #endif /* LWIP_IPV4 */
 
 #endif /* LWIP_HDR_IP_ADDR_H */
+
+

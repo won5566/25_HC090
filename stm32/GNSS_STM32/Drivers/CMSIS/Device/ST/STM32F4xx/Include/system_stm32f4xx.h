@@ -1,4 +1,4 @@
-/**
+﻿/**
   ******************************************************************************
   * @file    system_stm32f4xx.h
   * @author  MCD Application Team
@@ -102,3 +102,5 @@ extern void SystemCoreClockUpdate(void);
 /**
   * @}
   */
+
+

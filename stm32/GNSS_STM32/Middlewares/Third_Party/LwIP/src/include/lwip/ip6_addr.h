@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  *
  * IPv6 addresses.
@@ -350,3 +350,5 @@ char *ip6addr_ntoa_r(const ip6_addr_t *addr, char *buf, int buflen);
 #endif /* LWIP_IPV6 */
 
 #endif /* LWIP_HDR_IP6_ADDR_H */
+
+

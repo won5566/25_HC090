@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * SNMP support API for implementing netifs and statitics for MIB2
  */
@@ -211,3 +211,5 @@ void mib2_udp_unbind(struct udp_pcb *pcb);
 #endif
 
 #endif /* LWIP_HDR_SNMP_H */
+
+

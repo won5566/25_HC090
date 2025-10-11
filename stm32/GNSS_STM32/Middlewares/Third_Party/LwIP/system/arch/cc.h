@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Copyright (c) 2001-2003 Swedish Institute of Computer Science.
  * All rights reserved. 
  * 
@@ -86,3 +86,5 @@ typedef int sys_prot_t;
 #define LWIP_RAND() ((u32_t)rand())
 
 #endif /* __CC_H__ */
+
+

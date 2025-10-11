@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * netif API (to be used from TCPIP thread)
  */
@@ -667,3 +667,5 @@ void netif_invoke_ext_callback(struct netif* netif, netif_nsc_reason_t reason, c
 #endif
 
 #endif /* LWIP_HDR_NETIF_H */
+
+

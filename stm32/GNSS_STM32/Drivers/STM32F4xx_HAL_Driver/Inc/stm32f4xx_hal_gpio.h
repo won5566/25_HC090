@@ -1,4 +1,4 @@
-/**
+﻿/**
   ******************************************************************************
   * @file    stm32f4xx_hal_gpio.h
   * @author  MCD Application Team
@@ -322,4 +322,6 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin);
 #endif
 
 #endif /* __STM32F4xx_HAL_GPIO_H */
+
+
 

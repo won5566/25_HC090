@@ -1,4 +1,4 @@
-/* USER CODE BEGIN Header */
+Ôªø/* USER CODE BEGIN Header */
 /**
   ******************************************************************************
   * File Name          : LWIP.h
@@ -17,8 +17,8 @@
   *************************************************************************
 
   */
-#include "lwip/netif.h"     // struct netif ?†ï?ùò ?è¨?ï®
-extern struct netif gnetif; // ethernetif.c ?óê ?†ï?ùò?êú ?†Ñ?ó≠ Î≥??àò ?Ñ†?ñ∏
+#include "lwip/netif.h"     // struct netif ?Ï†ô?ÏìΩ ?Î£∑?Î∏ø
+extern struct netif gnetif; // ethernetif.c ?Îøâ ?Ï†ô?ÏìΩ?ÎßÇ ?Ïüæ?Îø≠ ËπÇ??Îãî ?ÍΩë?Îºµ
 
 /* USER CODE END Header */
 /* Define to prevent recursive inclusion -------------------------------------*/
@@ -77,3 +77,5 @@ void MX_LWIP_Process(void);
 /**
   * @}
   */
+
+

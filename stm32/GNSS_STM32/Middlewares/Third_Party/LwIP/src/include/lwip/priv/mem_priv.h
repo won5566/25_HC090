@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * lwIP internal memory implementations (do not use in application code)
  */
@@ -82,3 +82,5 @@ void mem_overflow_check_raw(void *p, size_t size, const char *descr1, const char
 #endif
 
 #endif /* LWIP_HDR_MEMP_PRIV_H */
+
+

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * MQTT client (private interface)
  */
@@ -102,3 +102,5 @@ struct mqtt_client_s
 #endif
 
 #endif /* LWIP_HDR_APPS_MQTT_PRIV_H */
+
+

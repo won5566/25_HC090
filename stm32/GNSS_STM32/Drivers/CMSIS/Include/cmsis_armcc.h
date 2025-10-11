@@ -1,4 +1,4 @@
-/**************************************************************************//**
+﻿/**************************************************************************//**
  * @file     cmsis_armcc.h
  * @brief    CMSIS compiler ARMCC (Arm Compiler 5) header file
  * @version  V5.3.2
@@ -886,3 +886,5 @@ __STATIC_INLINE void __set_FPSCR(uint32_t fpscr)
 
 
 #endif /* __CMSIS_ARMCC_H */
+
+

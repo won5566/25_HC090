@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * Application layered TCP connection API (to be used from TCPIP thread)\n
  * This interface mimics the tcp callback API to the application while preventing
@@ -144,3 +144,5 @@ enum tcp_state altcp_default_dbg_get_tcp_state(struct altcp_pcb *conn);
 #endif /* LWIP_ALTCP */
 
 #endif /* LWIP_HDR_ALTCP_PRIV_H */
+
+

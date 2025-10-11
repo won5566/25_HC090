@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * Sockets API internal implementations (do not use in application code)
  */
@@ -173,3 +173,5 @@ struct lwip_select_cb {
 #endif /* LWIP_SOCKET */
 
 #endif /* LWIP_HDR_SOCKETS_PRIV_H */
+
+

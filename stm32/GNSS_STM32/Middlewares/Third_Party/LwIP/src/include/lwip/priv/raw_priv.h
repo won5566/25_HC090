@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * raw API internal implementations (do not use in application code)
  */
@@ -67,3 +67,5 @@ void raw_netif_ip_addr_changed(const ip_addr_t* old_addr, const ip_addr_t* new_a
 #endif /* LWIP_RAW */
 
 #endif /* LWIP_HDR_RAW_PRIV_H */
+
+

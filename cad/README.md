@@ -1,21 +1,21 @@
-# 🧱 CAD Models — GNSS-Based Remote Steering and Variable-Wheel Robot
+﻿# ?㎟ CAD Models ??GNSS-Based Remote Steering and Variable-Wheel Robot
 
 This directory contains all **3D CAD design files** created in SolidWorks for the all-terrain mobile robot.  
 The mechanical design is divided into **three main subsystems**: the Variable Wheel, Steering Gearbox, and Camera Gimbal.
 
 ---
 
-## 📂 Folder Structure
+## ?뱛 Folder Structure
 
 cad/
-├── 가변바퀴/ # Variable-diameter wheel design (4-bar linkage)
-├── 조향장치/ # Steering gearbox & servo mount
-└── 카메라/ # Two-axis gimbal camera bracket system
+?쒋?? 媛蹂諛뷀? # Variable-diameter wheel design (4-bar linkage)
+?쒋?? 議고뼢?μ튂/ # Steering gearbox & servo mount
+?붴?? 移대찓?? # Two-axis gimbal camera bracket system
 
 
 ---
 
-## ⚙️ 1. Variable Wheel (가변바퀴)
+## ?숋툘 1. Variable Wheel (媛蹂諛뷀?
 
 **Description:**  
 Four-bar linkage structure that adjusts diameter between 140 mm and 200 mm.  
@@ -24,12 +24,12 @@ Optimized for both flat-surface driving and rough-terrain climbing.
 **Key Parts:**
 | File | Description |
 |------|--------------|
-| `어셈블리1.SLDASM` | Full wheel assembly including linkage and outer shell |
-| `바퀴바깥.SLDPRT` | Outer wheel shell |
-| `바퀴만어셈.SLDASM` | Linkage and hub integration |
-| `외부.SLDPRT` / `외부 dc모터 체결부분.SLDPRT` | Motor coupling parts |
-| `bldc모터.SLDPRT` | BLDC motor mount |
-| `계단.SLDPRT` | Test object used for stair-climbing simulation |
+| `?댁뀍釉붾━1.SLDASM` | Full wheel assembly including linkage and outer shell |
+| `諛뷀대컮源?SLDPRT` | Outer wheel shell |
+| `諛뷀대쭔?댁뀍.SLDASM` | Linkage and hub integration |
+| `?몃?.SLDPRT` / `?몃? dc紐⑦꽣 泥닿껐遺遺?SLDPRT` | Motor coupling parts |
+| `bldc紐⑦꽣.SLDPRT` | BLDC motor mount |
+| `怨꾨떒.SLDPRT` | Test object used for stair-climbing simulation |
 
 **Highlights:**
 - 4-bar linkage variable-radius mechanism  
@@ -39,7 +39,7 @@ Optimized for both flat-surface driving and rough-terrain climbing.
 
 ---
 
-## ⚙️ 2. Steering Gearbox (조향장치)
+## ?숋툘 2. Steering Gearbox (議고뼢?μ튂)
 
 **Description:**  
 Servo motor-based steering unit applying Ackermann geometry for independent 4-wheel steering.
@@ -47,22 +47,22 @@ Servo motor-based steering unit applying Ackermann geometry for independent 4-wh
 **Key Parts:**
 | File | Description |
 |------|--------------|
-| `기어박스.SLDPRT` / `기어박스 v2.SLDASM` | Main steering gearbox assembly |
-| `스티어링 기어박스.SLDPRT` | Ackermann steering pair model |
-| `조향장치 어셈블리.SLDASM` | Full assembled steering system |
-| `모터 축 연장.SLDPRT` | Shaft coupler extension |
-| `브라켓.SLDPRT` / `슬리핑외부2.SLDPRT` | Support brackets and bearing housings |
-| `17mbar_h100.SLDPRT`, `프로파일 340mm.SLDPRT` | Frame connection parts |
+| `湲곗뼱諛뺤뒪.SLDPRT` / `湲곗뼱諛뺤뒪 v2.SLDASM` | Main steering gearbox assembly |
+| `?ㅽ떚?대쭅 湲곗뼱諛뺤뒪.SLDPRT` | Ackermann steering pair model |
+| `議고뼢?μ튂 ?댁뀍釉붾━.SLDASM` | Full assembled steering system |
+| `紐⑦꽣 異??곗옣.SLDPRT` | Shaft coupler extension |
+| `釉뚮씪耳?SLDPRT` / `?щ━?묒쇅遺2.SLDPRT` | Support brackets and bearing housings |
+| `17mbar_h100.SLDPRT`, `?꾨줈?뚯씪 340mm.SLDPRT` | Frame connection parts |
 
 **Highlights:**
-- 0° – 270° steering range  
+- 0째 ??270째 steering range  
 - Servo-motor actuation with reduction gears  
 - Bearing-supported shaft for vibration stability  
 - Symmetric design for left/right module reuse  
 
 ---
 
-## 📷 3. Camera Gimbal (카메라)
+## ?벜 3. Camera Gimbal (移대찓??
 
 **Description:**  
 Two-axis gimbal system for camera stabilization, controlled by Arduino Mega + MPU6050.
@@ -70,10 +70,10 @@ Two-axis gimbal system for camera stabilization, controlled by Arduino Mega + MP
 **Key Parts:**
 | File | Description |
 |------|--------------|
-| `카메라브라켓1~4.SLDPRT` | Multi-layer camera bracket components |
-| `어셈블리3.SLDASM` | Assembled gimbal mount |
-| `카메라어셈블리.SLDASM` | Complete camera mount assembly |
-| `브라켓부품.SLDPRT` | Servo connection plate |
+| `移대찓?쇰툕?쇱폆1~4.SLDPRT` | Multi-layer camera bracket components |
+| `?댁뀍釉붾━3.SLDASM` | Assembled gimbal mount |
+| `移대찓?쇱뼱?덈툝由?SLDASM` | Complete camera mount assembly |
+| `釉뚮씪耳볥???SLDPRT` | Servo connection plate |
 
 **Highlights:**
 - Dual-axis rotation (Pitch/Roll)  
@@ -83,7 +83,7 @@ Two-axis gimbal system for camera stabilization, controlled by Arduino Mega + MP
 
 ---
 
-## 🏗️ Design Tools & Export
+## ?룛截?Design Tools & Export
 
 - **Software:** SolidWorks 2023  
 - **File Types:** `.SLDPRT`, `.SLDASM`  
@@ -92,13 +92,13 @@ Two-axis gimbal system for camera stabilization, controlled by Arduino Mega + MP
 
 ---
 
-## 📸 Preview
+## ?벝 Preview
 
-> *(Insert rendered images later — e.g., `images/wheel_render.png`, `images/steering_render.png`, `images/gimbal_render.png`)*
+> *(Insert rendered images later ??e.g., `images/wheel_render.png`, `images/steering_render.png`, `images/gimbal_render.png`)*
 
 ---
 
-## 🧾 Notes
+## ?㎨ Notes
 
 - All assemblies reference relative paths; keep folder structure intact when moving.  
 - Ensure mates are fully defined before motion simulation.  
@@ -106,6 +106,7 @@ Two-axis gimbal system for camera stabilization, controlled by Arduino Mega + MP
 
 ---
 
-**Maintained by Team L&K**  
-KOREATECH — Department of Mechatronics Engineering  
-Designed by: 이광민
+**Maintained by Team KLON**  
+KOREATECH ??Department of Mechatronics Engineering  
+Designed by: ?닿킅誘
+

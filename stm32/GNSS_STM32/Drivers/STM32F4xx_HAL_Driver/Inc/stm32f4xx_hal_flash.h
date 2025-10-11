@@ -1,4 +1,4 @@
-/**
+﻿/**
   ******************************************************************************
   * @file    stm32f4xx_hal_flash.h
   * @author  MCD Application Team
@@ -422,4 +422,6 @@ HAL_StatusTypeDef FLASH_WaitForLastOperation(uint32_t Timeout);
 #endif
 
 #endif /* __STM32F4xx_HAL_FLASH_H */
+
+
 

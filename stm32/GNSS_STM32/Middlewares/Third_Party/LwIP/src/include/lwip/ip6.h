@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  *
  * IPv6 layer.
@@ -91,3 +91,5 @@ void ip6_debug_print(struct pbuf *p);
 #endif /* LWIP_IPV6 */
 
 #endif /* LWIP_HDR_IP6_H */
+
+

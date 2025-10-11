@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * SNMP core API for implementing MIBs
  */
@@ -375,3 +375,5 @@ extern struct snmp_statistics snmp_stats;
 #endif /* LWIP_SNMP */
 
 #endif /* LWIP_HDR_APPS_SNMP_CORE_H */
+
+

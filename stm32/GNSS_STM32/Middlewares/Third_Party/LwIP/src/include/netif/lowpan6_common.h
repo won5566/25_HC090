@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  *
  * Common 6LowPAN routines for IPv6. Uses ND tables for link-layer addressing. Fragments packets to 6LowPAN units.
@@ -80,3 +80,5 @@ struct pbuf *lowpan6_decompress(struct pbuf *p, u16_t datagram_size, ip6_addr_t 
 #endif /* LWIP_IPV6 */
 
 #endif /* LWIP_HDR_LOWPAN6_COMMON_H */
+
+

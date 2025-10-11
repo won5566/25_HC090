@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * Additional SNMPv3 functionality RFC3414 and RFC3826.
  */
@@ -112,3 +112,5 @@ void snmpv3_password_to_key_sha(
 #endif
 
 #endif /* LWIP_HDR_APPS_SNMP_V3_H */
+
+

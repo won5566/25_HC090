@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * MDNS responder private definitions
  */
@@ -72,3 +72,5 @@ u16_t mdns_compress_domain(struct pbuf *pbuf, u16_t *offset, struct mdns_domain 
 #endif
 
 #endif /* LWIP_HDR_MDNS_PRIV_H */
+
+

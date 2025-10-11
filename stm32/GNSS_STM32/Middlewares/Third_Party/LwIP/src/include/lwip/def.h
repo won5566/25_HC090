@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * various utility macros
  */
@@ -150,3 +150,5 @@ char* lwip_strnstr(const char* buffer, const char* token, size_t n);
 #endif
 
 #endif /* LWIP_HDR_DEF_H */
+
+

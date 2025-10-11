@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * @file     mpu_armv8.h
  * @brief    CMSIS MPU API for Armv8-M and Armv8.1-M MPU
  * @version  V5.1.3
@@ -349,4 +349,6 @@ __STATIC_INLINE void ARM_MPU_Load_NS(uint32_t rnr, ARM_MPU_Region_t const* table
 #endif
 
 #endif
+
+
 

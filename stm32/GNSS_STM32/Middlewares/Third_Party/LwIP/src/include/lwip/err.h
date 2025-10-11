@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * lwIP Error codes
  */
@@ -115,3 +115,5 @@ int err_to_errno(err_t err);
 #endif
 
 #endif /* LWIP_HDR_ERR_H */
+
+

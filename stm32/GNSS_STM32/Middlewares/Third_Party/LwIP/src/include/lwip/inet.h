@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * This file (together with sockets.h) aims to provide structs and functions from
  * - arpa/inet.h
@@ -167,3 +167,5 @@ extern const struct in6_addr in6addr_any;
 #endif
 
 #endif /* LWIP_HDR_INET_H */
+
+

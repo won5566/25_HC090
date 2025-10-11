@@ -1,4 +1,4 @@
-/**
+﻿/**
   ******************************************************************************
   * @file    dp83848.h
   * @author  MCD Application Team
@@ -432,3 +432,5 @@ int32_t DP83848_GetITStatus(dp83848_Object_t *pObj, uint32_t Interrupt);
 /**
   * @}
   */
+
+

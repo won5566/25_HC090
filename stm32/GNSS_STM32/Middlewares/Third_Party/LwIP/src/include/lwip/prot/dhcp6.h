@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * DHCPv6 protocol definitions
  */
@@ -136,3 +136,5 @@ typedef enum {
 #endif
 
 #endif /* LWIP_HDR_PROT_DHCP6_H */
+
+

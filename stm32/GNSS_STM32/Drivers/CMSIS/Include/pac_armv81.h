@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * @file     pac_armv81.h
  * @brief    CMSIS PAC key functions for Armv8.1-M PAC extension
  * @version  V1.0.0
@@ -204,3 +204,5 @@ __STATIC_FORCEINLINE void __TZ_set_PAC_KEY_U_NS (uint32_t* pPacKey) {
 
 
 #endif /* PAC_ARMV81_H */
+
+

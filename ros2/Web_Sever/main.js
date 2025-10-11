@@ -1,4 +1,4 @@
-let map = L.map('map').setView([37.5665, 126.9780], 16); // Default: Seoul
+ï»¿let map = L.map('map').setView([37.5665, 126.9780], 16); // Default: Seoul
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 19,
   attribution: '&copy; OpenStreetMap contributors'
@@ -16,7 +16,7 @@ async function updatePosition() {
       map.setView([data.lat, data.lon], map.getZoom());
       statusEl.innerText = `Lat: ${data.lat.toFixed(7)}, Lon: ${data.lon.toFixed(7)} @ ${data.timestamp || ''}`;
     } else {
-      statusEl.innerText = 'Waiting for GNSS data¡¦';
+      statusEl.innerText = 'Waiting for GNSS dataâ€¦';
     }
   } catch (e) {
     statusEl.innerText = 'Error fetching /position';
@@ -25,3 +25,5 @@ async function updatePosition() {
 
 setInterval(updatePosition, 1000);
 updatePosition();
+
+

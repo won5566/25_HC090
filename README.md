@@ -8,7 +8,7 @@
 
 This project presents an **all-terrain mobile robot** that integrates a **GNSS-based remote steering system** and a **variable-diameter wheel mechanism** to achieve precise motion control and terrain adaptability.
 
-Developed by **Team L&K (KOREATECH)**, the system combines embedded hardware (STM32, Arduino, ESP32), ROS2-based GNSS visualization, and a Flask-based remote UI.
+Developed by **Team KLON (KOREATECH)**, the system combines embedded hardware (STM32, Arduino, ESP32), ROS2-based GNSS visualization, and a Flask-based remote UI.
 
 ---
 
@@ -181,7 +181,7 @@ All CAD models are designed in **SolidWorks 2023**, divided into three major sub
 
 ---
 
-## 👥 Team L&K — KOREATECH
+## 👥 Team KLON — KOREATECH
 
 | Name | Role |
 |------|------|
@@ -201,5 +201,6 @@ All CAD models are designed in **SolidWorks 2023**, divided into three major sub
 
 ---
 
-**Maintained by Team L&K — KOREATECH**  
+**Maintained by Team KLON — KOREATECH**  
 📍 [GitHub Repository](https://github.com/won5566/Mobile-Robot-Equipped-with-GNSS-Based-Remote-Steering-and-Variable-Wheels)
+

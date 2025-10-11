@@ -1,4 +1,4 @@
-/*****************************************************************************
+﻿/*****************************************************************************
 * pppdebug.h - System debugging utilities.
 *
 * Copyright (c) 2003 by Marc Boucher, Services Informatiques (MBSI) inc.
@@ -86,3 +86,5 @@ extern "C" {
 #endif /* PPPDEBUG_H */
 
 #endif /* PPP_SUPPORT */
+
+

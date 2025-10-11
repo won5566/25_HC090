@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Copyright (c) 2001-2003 Swedish Institute of Computer Science.
  * All rights reserved. 
  * 
@@ -33,4 +33,6 @@
 #if defined(__IAR_SYSTEMS_ICC__)
 #pragma pack(1)
 #endif
+
+
 

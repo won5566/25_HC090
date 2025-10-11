@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  *
  * IPv6 address scopes, zones, and scoping policy.
@@ -302,3 +302,5 @@ enum lwip_ipv6_scope_type
 #endif
 
 #endif /* LWIP_HDR_IP6_ZONE_H */
+
+

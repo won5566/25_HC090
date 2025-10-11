@@ -1,4 +1,4 @@
-/**
+﻿/**
   ******************************************************************************
   * @file    stm32f4xx_hal_flash_ramfunc.h
   * @author  MCD Application Team
@@ -73,4 +73,6 @@ __RAM_FUNC HAL_StatusTypeDef HAL_FLASHEx_DisableFlashSleepMode(void);
 
 
 #endif /* __STM32F4xx_FLASH_RAMFUNC_H */
+
+
 

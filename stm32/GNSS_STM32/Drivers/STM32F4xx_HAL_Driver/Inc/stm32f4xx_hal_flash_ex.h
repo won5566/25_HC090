@@ -1,4 +1,4 @@
-/**
+﻿/**
   ******************************************************************************
   * @file    stm32f4xx_hal_flash_ex.h
   * @author  MCD Application Team
@@ -1060,4 +1060,6 @@ void FLASH_FlushCaches(void);
 #endif
 
 #endif /* __STM32F4xx_HAL_FLASH_EX_H */
+
+
 

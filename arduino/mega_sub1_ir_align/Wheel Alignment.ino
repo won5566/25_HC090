@@ -1,4 +1,4 @@
-#include <Wire.h>
+﻿#include <Wire.h>
 #include <Adafruit_VL53L0X.h>
 
 const byte S1_OutputPin = 8;
@@ -24,7 +24,7 @@ Adafruit_VL53L0X lox4 = Adafruit_VL53L0X();
 void setup() {
   Serial.begin(115200);
   while (!Serial) delay(10);
-  Serial.println(F("시작: 4개 센서 초기화"));
+  Serial.println(F("?쒖옉: 4媛??쇱꽌 珥덇린??));
 
   Wire.begin();
   pinMode(XSHUT_PIN1, OUTPUT);
@@ -37,39 +37,39 @@ void setup() {
   digitalWrite(XSHUT_PIN4, LOW);
   delay(10);
 
-  // 센서1
-  Serial.println(F("센서1 활성화 (XSHUT1 HIGH)"));
+  // ?쇱꽌1
+  Serial.println(F("?쇱꽌1 ?쒖꽦??(XSHUT1 HIGH)"));
   digitalWrite(XSHUT_PIN1, HIGH);
   delay(10);
   bool ok1 = lox1.begin(ADDR1);
-  Serial.print(F("lox1.begin(0x30) 반환: "));
-  Serial.println(ok1 ? F("성공") : F("실패"));
+  Serial.print(F("lox1.begin(0x30) 諛섑솚: "));
+  Serial.println(ok1 ? F("?깃났") : F("?ㅽ뙣"));
 
-  // 센서2
-  Serial.println(F("센서2 활성화 (XSHUT2 HIGH)"));
+  // ?쇱꽌2
+  Serial.println(F("?쇱꽌2 ?쒖꽦??(XSHUT2 HIGH)"));
   digitalWrite(XSHUT_PIN2, HIGH);
   delay(10);
   bool ok2 = lox2.begin(ADDR2);
-  Serial.print(F("lox2.begin(0x31) 반환: "));
-  Serial.println(ok2 ? F("성공") : F("실패"));
+  Serial.print(F("lox2.begin(0x31) 諛섑솚: "));
+  Serial.println(ok2 ? F("?깃났") : F("?ㅽ뙣"));
 
-  // 센서3
-  Serial.println(F("센서3 활성화 (XSHUT3 HIGH)"));
+  // ?쇱꽌3
+  Serial.println(F("?쇱꽌3 ?쒖꽦??(XSHUT3 HIGH)"));
   digitalWrite(XSHUT_PIN3, HIGH);
   delay(10);
   bool ok3 = lox3.begin(ADDR3);
-  Serial.print(F("lox3.begin(0x32) 반환: "));
-  Serial.println(ok3 ? F("성공") : F("실패"));
+  Serial.print(F("lox3.begin(0x32) 諛섑솚: "));
+  Serial.println(ok3 ? F("?깃났") : F("?ㅽ뙣"));
 
-  // 센서4
-  Serial.println(F("센서4 활성화 (XSHUT4 HIGH)"));
+  // ?쇱꽌4
+  Serial.println(F("?쇱꽌4 ?쒖꽦??(XSHUT4 HIGH)"));
   digitalWrite(XSHUT_PIN4, HIGH);
   delay(10);
   bool ok4 = lox4.begin(ADDR4);
-  Serial.print(F("lox4.begin(0x33) 반환: "));
-  Serial.println(ok4 ? F("성공") : F("실패"));
+  Serial.print(F("lox4.begin(0x33) 諛섑솚: "));
+  Serial.println(ok4 ? F("?깃났") : F("?ㅽ뙣"));
 
-  Serial.println(F("↪️ setup() 완료, loop() 진입"));
+  Serial.println(F("?わ툘 setup() ?꾨즺, loop() 吏꾩엯"));
 }
 
 void loop() {
@@ -146,3 +146,5 @@ void loop() {
   Serial.println();
   delay(100);
 }
+
+

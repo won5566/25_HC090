@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * SNMP server MIB API to implement scalar nodes
  */
@@ -111,3 +111,5 @@ snmp_err_t snmp_scalar_array_get_next_instance(const u32_t *root_oid, u8_t root_
 #endif
 
 #endif /* LWIP_HDR_APPS_SNMP_SCALAR_H */
+
+

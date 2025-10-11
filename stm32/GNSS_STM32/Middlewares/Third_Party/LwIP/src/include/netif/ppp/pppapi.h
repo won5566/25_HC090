@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Redistribution and use in source and binary forms, with or without modification,
  * are permitted provided that the following conditions are met:
  *
@@ -135,3 +135,5 @@ err_t pppapi_ioctl(ppp_pcb *pcb, u8_t cmd, void *arg);
 #endif /* LWIP_PPP_API */
 
 #endif /* LWIP_PPPAPI_H */
+
+

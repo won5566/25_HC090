@@ -1,4 +1,4 @@
-# 📱 App Inventor — GNSS Remote Steering Controller
+﻿# ?벑 App Inventor ??GNSS Remote Steering Controller
 
 This folder contains the **App Inventor project (.aia)** used to remotely control  
 the all-terrain robot equipped with GNSS-based steering and variable wheels.  
@@ -6,10 +6,10 @@ The app provides an intuitive interface for driving, mode switching, and map-bas
 
 ---
 
-## 🧭 Overview
+## ?㎛ Overview
 
 The App Inventor project (`joystick.aia`) was developed to send **TCP/IP control commands**  
-to the Flask server, which relays them to the **ESP32 → STM32 → motor system**.
+to the Flask server, which relays them to the **ESP32 ??STM32 ??motor system**.
 
 It integrates:
 - **Real-time GNSS map visualization**
@@ -20,7 +20,7 @@ It integrates:
 
 ---
 
-## 📸 Application UI
+## ?벝 Application UI
 
 ![App Screenshot](./ui_preview.png)
 
@@ -30,29 +30,29 @@ It integrates:
 
 | Section | Description |
 |----------|--------------|
-| 🛰️ *GNSS 위치 지도* | Displays real-time robot position from Flask `/position` API |
-| 🎥 *Live Video* | Streams camera feed via Flask URL (`http://192.168.137.208`) |
-| 🕹️ *Control Buttons* | Forward / Stop / Back control (TCP commands) |
-| ⚙️ *Wheel Mode* | Switch between terrain modes (CCW, NORMAL, CW) |
-| 🔄 *Steering Slider* | Adjusts steering value between 0° and 270° |
+| ?쎇截?*GNSS ?꾩튂 吏?? | Displays real-time robot position from Flask `/position` API |
+| ?렏 *Live Video* | Streams camera feed via Flask URL (`http://192.168.137.208`) |
+| ?빘截?*Control Buttons* | Forward / Stop / Back control (TCP commands) |
+| ?숋툘 *Wheel Mode* | Switch between terrain modes (CCW, NORMAL, CW) |
+| ?봽 *Steering Slider* | Adjusts steering value between 0째 and 270째 |
 
 ---
 
-## ⚙️ Communication Flow
+## ?숋툘 Communication Flow
 
 [App Inventor UI]
-↓ (TCP/IP commands)
+??(TCP/IP commands)
 [Flask Web Server]
-↓
+??
 [ESP32]
-↓
+??
 [STM32 Controller]
-↓
+??
 [BLDC + Steering + Variable Wheel System]
 
 ---
 
-## 🧩 Technical Details
+## ?㎥ Technical Details
 
 | Parameter | Description |
 |------------|--------------|
@@ -65,9 +65,9 @@ It integrates:
 
 ---
 
-## 🚀 How to Use
+## ?? How to Use
 
-1. Open **MIT App Inventor** → *Import project (.aia)* → select `joystick.aia`
+1. Open **MIT App Inventor** ??*Import project (.aia)* ??select `joystick.aia`
 2. Edit IP field (`http://192.168.137.208`) to match your Flask server address
 3. Connect your Android device via **AI2 Companion** or build `.apk`
 4. Start the Flask server (`server/app.py`)
@@ -76,15 +76,16 @@ It integrates:
 
 ---
 
-## 🧠 Design Notes
+## ?쭬 Design Notes
 
 - The app UI was optimized for **7~10 inch tablets**
 - The GNSS map uses a **web-view** component linked to Flask `/map` route
-- The steering slider outputs an integer value (0–270), normalized for servo PWM
+- The steering slider outputs an integer value (0??70), normalized for servo PWM
 - Each mode button triggers a distinct packet for **STM32 mode switching logic**
 
 ---
 
-**Maintained by Team L&K**  
-KOREATECH — GNSS-Based Variable Wheel Robot Project  
-Developed by: 김진겸
+**Maintained by Team KLON**  
+KOREATECH ??GNSS-Based Variable Wheel Robot Project  
+Developed by: 源吏꾧껴
+

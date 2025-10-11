@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * Functions to sync with TCPIP thread
  */
@@ -111,3 +111,5 @@ int tcpip_thread_poll_one(void);
 #endif /* !NO_SYS */
 
 #endif /* LWIP_HDR_TCPIP_H */
+
+

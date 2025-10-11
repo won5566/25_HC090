@@ -1,4 +1,4 @@
-/**
+﻿/**
   ******************************************************************************
   * @file    stm32f4xx_hal_gpio_ex.h
   * @author  MCD Application Team
@@ -1587,4 +1587,6 @@
 #endif
 
 #endif /* __STM32F4xx_HAL_GPIO_EX_H */
+
+
 

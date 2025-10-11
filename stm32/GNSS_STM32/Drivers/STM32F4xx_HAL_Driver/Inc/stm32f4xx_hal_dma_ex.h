@@ -1,4 +1,4 @@
-/**
+﻿/**
   ******************************************************************************
   * @file    stm32f4xx_hal_dma_ex.h
   * @author  MCD Application Team
@@ -99,4 +99,6 @@ HAL_StatusTypeDef HAL_DMAEx_ChangeMemory(DMA_HandleTypeDef *hdma, uint32_t Addre
 #endif
 
 #endif /*__STM32F4xx_HAL_DMA_EX_H*/
+
+
 

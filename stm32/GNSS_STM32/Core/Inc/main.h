@@ -1,4 +1,4 @@
-/* USER CODE BEGIN Header */
+﻿/* USER CODE BEGIN Header */
 /**
   ******************************************************************************
   * @file           : main.h
@@ -77,3 +77,5 @@ void Error_Handler(void);
 #endif
 
 #endif /* __MAIN_H */
+
+

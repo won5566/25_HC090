@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * HTTP server
  */
@@ -253,3 +253,5 @@ void httpd_inits(struct altcp_tls_config *conf);
 #endif
 
 #endif /* LWIP_HDR_APPS_HTTPD_H */
+
+

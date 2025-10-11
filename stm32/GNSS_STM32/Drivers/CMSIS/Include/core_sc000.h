@@ -1,4 +1,4 @@
-/**************************************************************************//**
+﻿/**************************************************************************//**
  * @file     core_sc000.h
  * @brief    CMSIS SC000 Core Peripheral Access Layer Header File
  * @version  V5.0.7
@@ -1028,3 +1028,5 @@ __STATIC_INLINE uint32_t SysTick_Config(uint32_t ticks)
 #endif /* __CORE_SC000_H_DEPENDANT */
 
 #endif /* __CMSIS_GENERIC */
+
+

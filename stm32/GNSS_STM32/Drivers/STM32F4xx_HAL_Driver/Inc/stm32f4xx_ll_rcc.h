@@ -1,4 +1,4 @@
-/**
+﻿/**
   ******************************************************************************
   * @file    stm32f4xx_ll_rcc.h
   * @author  MCD Application Team
@@ -7098,4 +7098,6 @@ uint32_t    LL_RCC_GetDSIClockFreq(uint32_t DSIxSource);
 #endif
 
 #endif /* __STM32F4xx_LL_RCC_H */
+
+
 

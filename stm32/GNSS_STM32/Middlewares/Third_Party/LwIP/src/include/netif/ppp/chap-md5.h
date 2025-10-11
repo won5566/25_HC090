@@ -1,4 +1,4 @@
-/*
+﻿/*
  * chap-md5.h - New CHAP/MD5 implementation.
  *
  * Copyright (c) 2003 Paul Mackerras. All rights reserved.
@@ -34,3 +34,5 @@
 extern const struct chap_digest_type md5_digest;
 
 #endif /* PPP_SUPPORT && CHAP_SUPPORT */
+
+

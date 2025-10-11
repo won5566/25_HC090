@@ -1,4 +1,4 @@
-/**
+﻿/**
   ******************************************************************************
   * @file    stm32f4xx_ll_dma.h
   * @author  MCD Application Team
@@ -2865,4 +2865,6 @@ void LL_DMA_StructInit(LL_DMA_InitTypeDef *DMA_InitStruct);
 #endif
 
 #endif /* __STM32F4xx_LL_DMA_H */
+
+
 

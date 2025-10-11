@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file
  * MDNS responder
  */
@@ -103,3 +103,5 @@ void mdns_resp_announce(struct netif *netif);
 #endif
 
 #endif /* LWIP_HDR_APPS_MDNS_H */
+
+
