@@ -28,8 +28,6 @@ Developed by **Team L&K (KOREATECH)**, the system combines embedded hardware (ST
 [Arduino Mega Sub #1] → Wheel Alignment (IR Sensors)
 [Arduino Mega Sub #2] → 2-Axis Camera Gimbal (MPU6050 PID)
 
-yaml
-코드 복사
 
 ---
 
@@ -75,8 +73,6 @@ Mobile-Robot-Equipped-with-GNSS-Based-Remote-Steering-and-Variable-Wheels/
 │
 └── stm32/GNSS_STM32/ # Firmware: RS-485 (BLDC), PWM (servo), UART5 (ESP32)
 
-yaml
-코드 복사
 
 ---
 
