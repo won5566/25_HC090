@@ -46,8 +46,6 @@ stm32/
 ├── .project / .cproject # CubeIDE build metadata
 └── README.md # ← this file
 
-yaml
-코드 복사
 
 ---
 
@@ -62,9 +60,6 @@ STEER:<deg> → Set steering offset angle (e.g., STEER:45)
 WHEEL:CW → Switch wheel to climbing mode
 WHEEL:CCW → Switch wheel to terrain mode
 WHEEL:NORMAL → Return to flat mode
-
-yaml
-코드 복사
 
 Each command is terminated by a newline `\n` and parsed in the UART5 RX interrupt handler.
 
@@ -126,9 +121,6 @@ Each command is terminated by a newline `\n` and parsed in the UART5 RX interrup
 
 © 2025 L&K Robotics Team. All rights reserved.
 
-yaml
-코드 복사
-
 ---
 
 ## ✅ Commit Tag Convention
@@ -145,8 +137,6 @@ To build:
 2. Build → Run
 To upload:
 Connect ST-Link to Nucleo-F429ZI and click Debug/Run
-yaml
-코드 복사
 
 ---
 

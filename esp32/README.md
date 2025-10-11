@@ -65,13 +65,9 @@ ESP32	Flask	ACK:FWD	Acknowledgement
 ESP32	STM32	FWD\n	Forwarded UART command
 
 📶 Typical Connection Flow
-css
-코드 복사
 [App Inventor] → [Flask Server (Python)] → TCP → [ESP32] → UART → [STM32]
 👨‍💻 Author
 Team L&K — GNSS-Based Remote Steering Robot
 Firmware: 이원무 (ESP32 bridge communication)
 
-yaml
-코드 복사
 Last updated: 2025-10-11

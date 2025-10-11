@@ -43,8 +43,6 @@ Example request (from App Inventor):
   "cmd": "FWD"
 }
 🧰 File Structure
-graphql
-코드 복사
 server/
 ├── app/
 │   ├── GNSS_SERVER.py        # Flask main app
@@ -67,21 +65,16 @@ Each Flask POST → triggers TCP send → waits for "ACK" from ESP32.
 🚀 How to Run
 Install dependencies:
 
-bash
-코드 복사
 cd server
 python -m venv .venv
 .\.venv\Scripts\activate
 pip install -r requirements.txt
 Run server:
 
-bash
-코드 복사
 python app\GNSS_SERVER.py
 App Inventor endpoint:
 
 arduino
-코드 복사
 http://<SERVER_IP>:8080/api/cmd
 ⚠️ Security
 Uses static token (API_TOKEN = "changeme-robot") for API calls
@@ -101,6 +94,4 @@ ROS2 Integration
 Team L&K — Korea University of Technology and Education
 Software: 이원무 (Python Flask server & control bridge)
 
-yaml
-코드 복사
 Last updated: 2025-10-11
