@@ -44,6 +44,7 @@ Main functions:
   "cmd": "FWD"
 }
 File Structure
+<pre>
 server/
 ├─ app/
 │  ├─ GNSS_SERVER.py         # Flask main application
@@ -52,6 +53,7 @@ server/
 │  └─ templates/             # (optional) HTML templates for visualization
 ├─ requirements.txt
 └─ README.md
+</pre>
 TCP Connection Details
 Parameter	Description
 ESP32 Host	192.168.0.xx (set in tcp_client.py)

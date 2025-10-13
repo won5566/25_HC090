@@ -20,6 +20,7 @@ the complete software and hardware system for the GNSS-based remote-steering rob
 
 ## 2. Directory Structure
 
+<pre>
 project/
 ├─ ros2/ # GNSS + Flask visualization system
 ├─ server/ # Flask TCP bridge and control API
@@ -28,7 +29,7 @@ project/
 ├─ appinventor/ # Android joystick application (.aia)
 ├─ scripts/ # Launch and automation scripts
 └─ docs/ # Reports and reference documents
-
+</pre>
 
 ---
 
@@ -145,13 +146,13 @@ Access the Flask and camera services remotely using generated URLs.
 
 11. Verification Checklist
 Component	Check	Expected Result
-GNSS Node	✅	/fix topic publishing
-Flask Server	✅	Accessible at :8080/healthz
-ESP32 Bridge	✅	Receives and ACKs TCP commands
-STM32	✅	Motors/servos respond to commands
-App Inventor	✅	UI communicates correctly
-Camera	✅	Live stream visible on port 8080
-ngrok	✅	Remote access confirmed
+GNSS Node	/fix topic publishing
+Flask Server	Accessible at :8080/healthz
+ESP32 Bridge	Receives and ACKs TCP commands
+STM32	Motors/servos respond to commands
+App Inventor	UI communicates correctly
+Camera	Live stream visible on port 8080
+ngrok	Remote access confirmed
 
 12. License and Maintenance
 All source code and documentation are provided for educational and research use.

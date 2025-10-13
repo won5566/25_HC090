@@ -7,11 +7,12 @@ The mechanical design is organized into **three subsystems**: **Variable Wheel**
 
 ## Folder Structure
 
+<pre>
 cad/
 ├─ variable-wheel/ # Variable-diameter wheel (4-bar linkage)
 ├─ steering-gearbox/ # Steering gearbox & servo mounts (4WIS/Ackermann)
 └─ camera-gimbal/ # Two-axis camera gimbal bracket set
-
+</pre>
 
 > Keep this structure when moving the project to preserve assembly reference paths.
 
@@ -112,7 +113,9 @@ Compact **pitch/roll** gimbal for camera stabilization, driven by small servos; 
 
 ## Preview Placeholders
 
+<pre>
 images/
 ├─ wheel_render.png
 ├─ steering_render.png
 └─ gimbal_render.png
+</pre>

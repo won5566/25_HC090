@@ -35,6 +35,7 @@ to the physical driving components (motors, servos, sensors).
 
 ## Firmware Structure
 
+<pre>
 stm32/
 └─ GNSS_STM32/
 ├─ Core/ # main.c, interrupt handlers, user code
@@ -46,7 +47,7 @@ stm32/
 ├─ GNSS_STM32.ioc # STM32CubeMX project configuration
 ├─ .project / .cproject # STM32CubeIDE build metadata
 └─ README.md # This file
-
+</pre>
 
 ---
 
