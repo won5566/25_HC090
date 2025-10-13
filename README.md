@@ -1,10 +1,10 @@
-﻿# 🛰️ Mobile Robot Equipped with GNSS-Based Remote Steering and Variable Wheels
+﻿# Mobile Robot Equipped with GNSS-Based Remote Steering and Variable Wheels
 
 > **All-Terrain Mobile Robot** integrating multi-layer communication, GNSS localization, ROS2-based visualization, and real-time steering control for terrain adaptability.
 
 ---
 
-## 📘 Project Overview
+## Project Overview
 
 This project presents an **all-terrain mobile robot** that integrates a **GNSS-based remote steering system** and a **variable-diameter wheel mechanism** to achieve precise motion control and terrain adaptability.
 
@@ -12,7 +12,7 @@ Developed by **Team KLON (KOREATECH)**, the system combines embedded hardware (S
 
 ---
 
-## 🧭 System Architecture
+## System Architecture
 
 <pre>
 [Tablet / App Inventor UI]
@@ -32,22 +32,22 @@ Developed by **Team KLON (KOREATECH)**, the system combines embedded hardware (S
 
 ---
 
-## ⚙️ Key Features
+## Key Features
 
 | Category | Description |
 |-----------|-------------|
-| 🛰️ **GNSS Localization** | ZED-F9P RTK GNSS integrated with ROS2 NavSatFix; JSON bridge to Flask map visualization |
-| 🎮 **Remote Control** | Real-time teleoperation via Flask Web UI and App Inventor joystick |
-| ⚙️ **Variable Wheel System** | 4-bar linkage mechanism allowing wheel radius change (140 mm ↔ 200 mm) |
-| 🧭 **Independent Steering** | Servo-driven 0°–270° Ackermann steering for 4-wheel control |
-| 🔧 **Auto Alignment** | IR-based wheel zero-position calibration (Arduino Sub #1) |
-| 🎥 **Camera Stabilization** | 2-axis gimbal controlled by MPU6050 + PID (Arduino Sub #2) |
-| 🌐 **Visualization** | Flask-based GNSS map + live video feed |
-| 🧩 **Modular Architecture** | ROS2 + Flask + MCU layers separated for maintainability |
+| **GNSS Localization** | ZED-F9P RTK GNSS integrated with ROS2 NavSatFix; JSON bridge to Flask map visualization |
+| **Remote Control** | Real-time teleoperation via Flask Web UI and App Inventor joystick |
+| **Variable Wheel System** | 4-bar linkage mechanism allowing wheel radius change (140 mm ↔ 200 mm) |
+| **Independent Steering** | Servo-driven 0°–270° Ackermann steering for 4-wheel control |
+| **Auto Alignment** | IR-based wheel zero-position calibration (Arduino Sub #1) |
+| **Camera Stabilization** | 2-axis gimbal controlled by MPU6050 + PID (Arduino Sub #2) |
+| **Visualization** | Flask-based GNSS map + live video feed |
+| **Modular Architecture** | ROS2 + Flask + MCU layers separated for maintainability |
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 <pre>
 Mobile-Robot-Equipped-with-GNSS-Based-Remote-Steering-and-Variable-Wheels/
@@ -59,9 +59,9 @@ Mobile-Robot-Equipped-with-GNSS-Based-Remote-Steering-and-Variable-Wheels/
 │  └─ mega_sub2_gimbal/          # 2-axis camera gimbal controller
 │
 ├─ cad/
-│  ├─ 가변바퀴/                   # Variable-diameter wheel assembly
-│  ├─ 조향장치/                   # Steering gearbox assembly
-│  └─ 카메라/                     # Gimbal camera bracket
+│  ├─ Variable Wheel/                   # Variable-diameter wheel assembly
+│  ├─ Steering/                   # Steering gearbox assembly
+│  └─ Camera/                     # Gimbal camera bracket
 │
 ├─ docs/                         # Papers, reports, and posters
 │
@@ -78,9 +78,9 @@ Mobile-Robot-Equipped-with-GNSS-Based-Remote-Steering-and-Variable-Wheels/
 
 ---
 
-## 🧠 Software Highlights
+## Software Highlights
 
-### 🧭 ROS2 Layer
+### ROS2 Layer
 
 - Converts **GNSS NavSatFix → JSON** for Flask integration  
 - Publishes `/position` API for live GNSS visualization  
@@ -88,7 +88,7 @@ Mobile-Robot-Equipped-with-GNSS-Based-Remote-Steering-and-Variable-Wheels/
 
 ---
 
-### 🌐 Flask Web Server
+### Flask Web Server
 
 - Renders map visualization and streams live video  
 - Relays TCP commands to ESP32  
@@ -96,7 +96,7 @@ Mobile-Robot-Equipped-with-GNSS-Based-Remote-Steering-and-Variable-Wheels/
 
 ---
 
-### 📱 App Inventor Joystick
+### App Inventor Joystick
 
 - Sends directional commands (Front / Stop / Back) via TCP  
 - Switches **wheel modes (CW / NORMAL / CCW)**  
@@ -105,7 +105,7 @@ Mobile-Robot-Equipped-with-GNSS-Based-Remote-Steering-and-Variable-Wheels/
 
 ---
 
-### ⚙️ STM32 Main Controller
+### STM32 Main Controller
 
 - Controls **BLDC motors (RS-485)** and **servo steering (PWM)**  
 - Communicates with ESP32 via **UART5 (115200 bps)**  
@@ -113,7 +113,7 @@ Mobile-Robot-Equipped-with-GNSS-Based-Remote-Steering-and-Variable-Wheels/
 
 ---
 
-### 🤖 Arduino Submodules
+### Arduino Submodules
 
 | Submodule | Function |
 |------------|-----------|
@@ -122,32 +122,33 @@ Mobile-Robot-Equipped-with-GNSS-Based-Remote-Steering-and-Variable-Wheels/
 
 ---
 
-## 🧱 Mechanical Design
+## Mechanical Design
 
 All CAD models are designed in **SolidWorks 2023**, divided into three major subsystems.
 
 | Subsystem | Description |
 |------------|-------------|
-| 🌀 **Variable Wheel** | Adjustable 4-bar linkage wheel (Ø140–200 mm) |
-| ⚙️ **Steering Gearbox** | Servo-driven Ackermann steering assembly |
-| 🎥 **Camera Gimbal** | Dual-axis stabilization mount for onboard camera |
+| **Variable Wheel** | Adjustable 4-bar linkage wheel (Ø140–200 mm) |
+| **Steering Gearbox** | Servo-driven Ackermann steering assembly |
+| **Camera Gimbal** | Dual-axis stabilization mount for onboard camera |
 
 > Export formats: `.SLDPRT`, `.SLDASM`, `.STEP`, `.STL`
 
 ---
 
-## 🧾 Documentation
+## Documentation
 
-| Type | File | Description |
-|------|------|-------------|
-| 📄 **Final Report** | `결과보고서_GNSS기반로봇.pdf` | WE-Meet Project Final Report |
-| 📰 **Paper** | `논문.pdf` | ICROS 2025 Conference Paper |
-| 🧷 **Poster** | `포스터 논문 양식.pdf` | KROS Poster Submission |
-| 🎓 **Presentation** | `졸작 3차 발표자료.pptx` | Capstone Design Presentation |
+| File | Description |
+|------|-------------|
+| `25년_SW개발_HW제작성설계서_응용하드웨어.pptx` | Hardware and software design specification for the Applied Hardware project |
+| `2025 한이음 드림업 발표.pptx` | Final presentation for the 2025 Hanium Dream-Up project |
+| `2025년 한이음 드림업 개발보고서.hwp` | Development report for the 2025 Hanium Dream-Up project |
+| `논문.hwp` | Research paper on the GNSS-based variable-wheel terrain robot |
+| `졸작 포스터논문.pptx` | Capstone project poster presentation document |
 
 ---
 
-## 💻 Technical Stack
+## Technical Stack
 
 | Domain | Tools / Hardware |
 |--------|------------------|
@@ -160,47 +161,35 @@ All CAD models are designed in **SolidWorks 2023**, divided into three major sub
 
 ---
 
-## 🚀 Performance & Results
+## Performance & Results
 
-- ✅ **RTK-GNSS Precision:** RMS ≈ 2.3 cm (Max Error < 4 cm)  
-- ✅ **Steering Response Delay:** < 100 ms  
-- ✅ **Stair Climbing Capability:** up to 15 cm step height  
-- ✅ **Long-term Stability:** > 30 min continuous operation  
-- ✅ **Full Integration:** Indoor + Outdoor tested  
+- **RTK-GNSS Precision:** RMS ≈ 2.3 cm (Max Error < 4 cm)  
+- **Steering Response Delay:** < 100 ms  
+- **Stair Climbing Capability:** up to 15 cm step height  
+- **Long-term Stability:** > 30 min continuous operation  
+- **Full Integration:** Indoor + Outdoor tested  
 
 ---
 
-## 🌍 Application Fields
+## Application Fields
 
 | Field | Example Use |
 |--------|--------------|
-| 🚒 **Disaster Response** | Remote rescue in hazardous environments |
-| 🚜 **Agriculture** | GNSS-based crop monitoring and control |
-| 🪖 **Defense / Surveillance** | Remote observation and reconnaissance |
-| 🎓 **Education** | Learning platform for GNSS, ROS2, and embedded systems |
+| **Disaster Response** | Remote rescue in hazardous environments |
+| **Agriculture** | GNSS-based crop monitoring and control |
+| **Defense / Surveillance** | Remote observation and reconnaissance |
+| **Education** | Learning platform for GNSS, ROS2, and embedded systems |
 
 ---
 
-## 👥 Team KLON — KOREATECH
+## Summary
 
-| Name | Role |
-|------|------|
-| **김진겸** | Team Leader / System Integration |
-| **김형준** | ROS2 & Software Development |
-| **이광민** | Mechanical Design / CAD Modeling |
-| **이원무** | Hardware Control / Embedded Firmware / Network Integration |
+**Structurally Complete** – Independent HW · SW · Web · UI layers  
+**Professionally Documented** – Each subsystem has its own README  
+**Public & Reproducible** – Ready for academic or competition use  
+**Demonstrated Integration** – GNSS-based, real-time, terrain-adaptive robot  
 
 ---
 
-## 🏁 Summary
-
-✅ **Structurally Complete** – Independent HW · SW · Web · UI layers  
-✅ **Professionally Documented** – Each subsystem has its own README  
-✅ **Public & Reproducible** – Ready for academic or competition use  
-✅ **Demonstrated Integration** – GNSS-based, real-time, terrain-adaptive robot  
-
----
-
-**Maintained by Team KLON — KOREATECH**  
-📍 [GitHub Repository](https://github.com/won5566/Mobile-Robot-Equipped-with-GNSS-Based-Remote-Steering-and-Variable-Wheels)
+[GitHub Repository](https://github.com/won5566/Mobile-Robot-Equipped-with-GNSS-Based-Remote-Steering-and-Variable-Wheels)
 

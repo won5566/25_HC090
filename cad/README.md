@@ -1,112 +1,118 @@
-﻿# ?㎟ CAD Models ??GNSS-Based Remote Steering and Variable-Wheel Robot
+﻿# CAD Models — GNSS-Based Remote Steering & Variable-Wheel Robot
 
-This directory contains all **3D CAD design files** created in SolidWorks for the all-terrain mobile robot.  
-The mechanical design is divided into **three main subsystems**: the Variable Wheel, Steering Gearbox, and Camera Gimbal.
+This directory contains all **3D CAD design files** (SolidWorks) for the all-terrain mobile robot.  
+The mechanical design is organized into **three subsystems**: **Variable Wheel**, **Steering Gearbox**, and **Camera Gimbal**.
 
 ---
 
-## ?뱛 Folder Structure
+## Folder Structure
 
 cad/
-?쒋?? 媛蹂諛뷀? # Variable-diameter wheel design (4-bar linkage)
-?쒋?? 議고뼢?μ튂/ # Steering gearbox & servo mount
-?붴?? 移대찓?? # Two-axis gimbal camera bracket system
+├─ variable-wheel/ # Variable-diameter wheel (4-bar linkage)
+├─ steering-gearbox/ # Steering gearbox & servo mounts (4WIS/Ackermann)
+└─ camera-gimbal/ # Two-axis camera gimbal bracket set
 
 
----
-
-## ?숋툘 1. Variable Wheel (媛蹂諛뷀?
-
-**Description:**  
-Four-bar linkage structure that adjusts diameter between 140 mm and 200 mm.  
-Optimized for both flat-surface driving and rough-terrain climbing.
-
-**Key Parts:**
-| File | Description |
-|------|--------------|
-| `?댁뀍釉붾━1.SLDASM` | Full wheel assembly including linkage and outer shell |
-| `諛뷀대컮源?SLDPRT` | Outer wheel shell |
-| `諛뷀대쭔?댁뀍.SLDASM` | Linkage and hub integration |
-| `?몃?.SLDPRT` / `?몃? dc紐⑦꽣 泥닿껐遺遺?SLDPRT` | Motor coupling parts |
-| `bldc紐⑦꽣.SLDPRT` | BLDC motor mount |
-| `怨꾨떒.SLDPRT` | Test object used for stair-climbing simulation |
-
-**Highlights:**
-- 4-bar linkage variable-radius mechanism  
-- Supports both CW (stair-climbing) and CCW (rough-terrain) modes  
-- SolidWorks Motion used for linkage motion analysis  
-- 12 mm shaft and 40 mm bearing interfaces applied  
+> Keep this structure when moving the project to preserve assembly reference paths.
 
 ---
 
-## ?숋툘 2. Steering Gearbox (議고뼢?μ튂)
+## 1) Variable Wheel (4-Bar Variable-Diameter)
 
-**Description:**  
-Servo motor-based steering unit applying Ackermann geometry for independent 4-wheel steering.
+**Summary**  
+A four-bar linkage wheel that adjusts its effective diameter between **140 mm** and **200 mm** for terrain adaptability (flat ↔ rough terrain ↔ stair climbing).
 
-**Key Parts:**
-| File | Description |
-|------|--------------|
-| `湲곗뼱諛뺤뒪.SLDPRT` / `湲곗뼱諛뺤뒪 v2.SLDASM` | Main steering gearbox assembly |
-| `?ㅽ떚?대쭅 湲곗뼱諛뺤뒪.SLDPRT` | Ackermann steering pair model |
-| `議고뼢?μ튂 ?댁뀍釉붾━.SLDASM` | Full assembled steering system |
-| `紐⑦꽣 異??곗옣.SLDPRT` | Shaft coupler extension |
-| `釉뚮씪耳?SLDPRT` / `?щ━?묒쇅遺2.SLDPRT` | Support brackets and bearing housings |
-| `17mbar_h100.SLDPRT`, `?꾨줈?뚯씪 340mm.SLDPRT` | Frame connection parts |
+**Typical Files**
+- `wheel_assembly.SLDASM` — Full wheel assembly (linkage + outer shell)  
+- `outer_shell.SLDPRT` — Outer flexible shell/rim  
+- `linkage_hub_assembly.SLDASM` — Linkage to hub integration  
+- `motor_coupler_A.SLDPRT`, `motor_coupler_B.SLDPRT` — BLDC/servo couplers  
+- `bldc_mount.SLDPRT` — BLDC motor mount  
+- `stair_test_block.SLDPRT` — Test object for stair-climb simulation
 
-**Highlights:**
-- 0째 ??270째 steering range  
-- Servo-motor actuation with reduction gears  
-- Bearing-supported shaft for vibration stability  
-- Symmetric design for left/right module reuse  
-
----
-
-## ?벜 3. Camera Gimbal (移대찓??
-
-**Description:**  
-Two-axis gimbal system for camera stabilization, controlled by Arduino Mega + MPU6050.
-
-**Key Parts:**
-| File | Description |
-|------|--------------|
-| `移대찓?쇰툕?쇱폆1~4.SLDPRT` | Multi-layer camera bracket components |
-| `?댁뀍釉붾━3.SLDASM` | Assembled gimbal mount |
-| `移대찓?쇱뼱?덈툝由?SLDASM` | Complete camera mount assembly |
-| `釉뚮씪耳볥???SLDPRT` | Servo connection plate |
-
-**Highlights:**
-- Dual-axis rotation (Pitch/Roll)  
-- Modular mounting for various webcams  
-- Compact 3D-printed bracket optimized for 9 g servo  
-- Stable frame connection to upper robot plate  
+**Highlights**
+- **Variable radius**: 140–200 mm (adjustable in motion)  
+- **Dual mode**:
+  - **CW Mode**: “claw-like” profile for step (stair) climbing  
+  - **CCW Mode**: curved profile for uneven/rough terrain
+- **Analysis**: SolidWorks Motion study for linkage & clearance  
+- **Interfaces**: 12 mm shaft, 40 mm bearing seats
 
 ---
 
-## ?룛截?Design Tools & Export
+## 2) Steering Gearbox (4-Wheel Independent Steering)
 
-- **Software:** SolidWorks 2023  
-- **File Types:** `.SLDPRT`, `.SLDASM`  
-- **Export Options:** `.STEP`, `.STL` available for fabrication (3D printing / CNC)  
-- **Unit System:** mm (ISO)  
+**Summary**  
+Servo-driven steering module applying **Ackermann geometry** with reduction gears for precise turning and on-spot rotation.
 
----
+**Typical Files**
+- `steering_gearbox_v1.SLDASM` / `steering_gearbox_v2.SLDASM` — Main gearbox assemblies  
+- `ackermann_pair.SLDPRT` — Knuckle/pair model for geometry verification  
+- `steering_full.SLDASM` — Assembled steering system module  
+- `shaft_coupler_ext.SLDPRT` — Coupler/extension parts  
+- `support_bracket.SLDPRT`, `bearing_housing_v2.SLDPRT` — Brackets & housings  
+- `frame_connector_17mm_h100.SLDPRT`, `long_plate_340mm.SLDPRT` — Frame connection parts
 
-## ?벝 Preview
-
-> *(Insert rendered images later ??e.g., `images/wheel_render.png`, `images/steering_render.png`, `images/gimbal_render.png`)*
-
----
-
-## ?㎨ Notes
-
-- All assemblies reference relative paths; keep folder structure intact when moving.  
-- Ensure mates are fully defined before motion simulation.  
-- STL versions can be used directly for 3D printing (TPU + PLA recommended).  
+**Highlights**
+- **Steering range**: 0°–270° (servo + reduction)  
+- **4WIS**: independent steering per wheel; symmetric L/R reuse  
+- **Bearing-supported shafts** for vibration stability
 
 ---
 
-**Maintained by Team KLON**  
-KOREATECH ??Department of Mechatronics Engineering  
-Designed by: ?닿킅誘
+## 3) Camera Gimbal (2-Axis)
 
+**Summary**  
+Compact **pitch/roll** gimbal for camera stabilization, driven by small servos; designed to pair with **Arduino Mega + MPU6050** control.
+
+**Typical Files**
+- `gimbal_plate_1.SLDPRT` … `gimbal_plate_4.SLDPRT` — Multi-layer plates  
+- `gimbal_mount.SLDASM` — Gimbal assembly  
+- `camera_stack_full.SLDASM` — Camera + gimbal + mount stack  
+- `servo_link_plate.SLDPRT` — Servo horn/link plate
+
+**Highlights**
+- **2-axis** stabilization (Pitch/Roll)  
+- **Modular** mounts for webcams/action cams  
+- **9 g servo-optimized** 3D-printable parts  
+- Rigid connection to top frame for reduced jitter
+
+---
+
+## Design Tools & Export
+
+- **CAD**: SolidWorks 2023  
+- **Native**: `.SLDPRT`, `.SLDASM`  
+- **Export**: `.STEP` (machining/CNC), `.STL` (3D printing)  
+- **Units**: millimeter (ISO)
+
+> **Printing tip**: TPU for outer contact surfaces (grip/damping), PLA/PETG for structural plates.
+
+---
+
+## Quick Specs (for reference)
+
+- **Robot mass**: ~15–20 kg (prototype range)  
+- **Footprint**: ~500–590 × 300–520 × 300–370 mm (variants)  
+- **Wheel radius**: 140–200 mm (variable)  
+- **Steering**: 0°–270° servo-based (independent per wheel)  
+- **Modes**: Flat / Rough-terrain (CCW) / Stair-climb (CW)
+
+---
+
+## Notes
+
+- **Mates**: Fully define all mates before motion analysis to avoid over-constraints.  
+- **Assembly paths**: Use **relative paths**; keep subfolder names intact.  
+- **STL slicing**: High infill for gear teeth & couplers; TPU shells benefit from 2–3 wall lines and 15–25% gyroid.  
+- **Clearance**: Verify linkage clearance at max/min radius with steering at extremes.  
+- **Fasteners/Bearings**: Document sizes in a BOM before machining/printing.
+
+---
+
+## Preview Placeholders
+
+images/
+├─ wheel_render.png
+├─ steering_render.png
+└─ gimbal_render.png

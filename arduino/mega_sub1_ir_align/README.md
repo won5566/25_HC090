@@ -1,42 +1,43 @@
-﻿# ?숋툘 Arduino Mega Sub #1 ??Wheel Alignment Controller
+﻿# Arduino Mega Sub #1 - Wheel Alignment Controller
 
-This module is an **independent calibration controller** designed to align all four steering wheels  
-to their default zero position using **infrared (IR) sensors** before normal driving begins.  
+This module is an independent calibration controller designed to align all four steering wheels  
+to their default zero position using infrared (IR) sensors before normal driving begins.  
 It operates autonomously and does not require communication with the main STM32 controller.
 
 ---
 
-## ?㎛ Overview
+## Overview
 
 | Item | Description |
 |------|--------------|
-| **Board** | Arduino Mega 2560 |
-| **Sensor** | IR Reflective Sensors (x4) |
-| **Actuators** | Servo motors for steering wheels |
-| **Purpose** | Align each wheel to a neutral reference position before robot operation |
-| **Main File** | `Wheel Alignment.ino` |
+| Board | Arduino Mega 2560 |
+| Sensor | IR reflective sensors (x4) |
+| Actuators | Servo motors for steering wheels |
+| Purpose | Align each wheel to a neutral reference position before robot operation |
+| Main File | `Wheel Alignment.ino` |
 
 ---
 
-## ?㎥ System Architecture
+## System Architecture
 
-[IR Sensors] ??detect alignment mark
-??
-[Arduino Mega #1] ??PID-based servo correction
-??
-[Servo Motors] ??adjust to 90째 (neutral position)
+<pre>
+[IR Sensors] → detect alignment mark
+        ↓
+[Arduino Mega #1] → PID-based servo correction
+        ↓
+[Servo Motors] → adjust to 90° (neutral position)
+</pre>
 
-
-- Each wheel has one IR sensor detecting a reflective mark on the shaft.
-- When reflection is detected, the servo is stopped and held at the reference angle.
-- A short calibration routine runs at startup.
+- Each wheel has one IR sensor detecting a reflective mark on the shaft.  
+- When reflection is detected, the servo is stopped and held at the reference angle.  
+- A short calibration routine runs automatically at startup.
 
 ---
 
-## ?뵆 Pin Configuration
+## Pin Configuration
 
 | Component | Arduino Pin | Description |
-|------------|--------------|--------------|
+|------------|--------------|-------------|
 | Servo FL (Front-Left) | D3 | PWM output |
 | Servo FR (Front-Right) | D5 | PWM output |
 | Servo RL (Rear-Left) | D6 | PWM output |
@@ -46,16 +47,16 @@ It operates autonomously and does not require communication with the main STM32 
 | IR Sensor RL | A2 | Analog input |
 | IR Sensor RR | A3 | Analog input |
 
-> **Note:** Pin numbers can be reconfigured in the code depending on servo shield or wiring layout.
+*Note: Pin numbers can be reconfigured in the code depending on the servo shield or wiring layout.*
 
 ---
 
-## ?쭬 Control Logic Summary
+## Control Logic Summary
 
-1. On power-up, each wheel begins to rotate slowly to search for the IR reflection mark.  
-2. When reflection intensity exceeds threshold ??servo stops and angle saved as zero position.  
-3. After all four wheels are aligned, the system signals completion via LED or serial output.  
-4. The robot?셲 STM32 controller can then start its motion sequence with aligned steering geometry.
+1. On power-up, each wheel slowly rotates to search for the reflective mark.  
+2. When reflection intensity exceeds the threshold, the servo stops and the current angle is saved as the zero position.  
+3. After all four wheels are aligned, the system indicates completion via LED or serial output.  
+4. Once alignment is complete, the STM32 controller can begin motion control using the aligned steering geometry.
 
 **Pseudo-code:**
 ```cpp
@@ -64,28 +65,17 @@ if (analogRead(IR_pin) > threshold) {
 } else {
     servo.write(servo_angle + offset);
 }
-?뮕 Features
-Independent operation ??no serial link with STM32 required
+Features
+Independent operation (no serial link with STM32 required)
 
-Quick calibration (< 3 seconds) on startup
+Quick calibration (<3 seconds) on startup
 
-Prevents wheel misalignment caused by power resets
+Prevents wheel misalignment after resets
 
-Reduces cumulative steering offset errors during long runs
+Reduces cumulative steering offset during long runs
 
-?뵩 Troubleshooting
+Troubleshooting
 Issue	Possible Cause	Solution
 Servo not stopping	IR sensor threshold too high	Adjust threshold value in code
-Alignment drift	Servo horn mounting offset	Recalibrate physical center
-No IR detection	Sensor not aligned to reflective tape	Reposition sensor angle (??15째)
-
-?뱞 File List
-File	Description
-Wheel Alignment.ino	Main Arduino sketch for IR-based wheel alignment
-README.md	Module documentation (this file)
-
-Maintained by Team KLON
-KOREATECH ??GNSS-Based Variable Wheel Robot Project
-Sub Controller #1 (Wheel Alignment Unit)
-Developed by: 源吏꾧껴
-
+Alignment drift	Servo horn mounting offset	Recalibrate the physical center
+No IR detection	Sensor not aligned to reflective tape	Reposition sensor angle (~15°)

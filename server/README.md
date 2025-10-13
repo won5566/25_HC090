@@ -1,98 +1,94 @@
-﻿```markdown
-# Flask Server ??GNSS-Based Remote Control Bridge
+﻿# Flask Server - GNSS-Based Remote Control Bridge
 
-This directory hosts the **Python Flask application** that manages
-remote communication between the App Inventor interface and the ESP32 module.
+This directory hosts the **Python Flask application**  
+that manages remote communication between the App Inventor interface and the ESP32 module.
 
 ---
 
-## ?쭬 Overview
+## Overview
 
-The Flask server:
-- Provides REST API endpoints for App Inventor  
+The Flask server performs as the main communication bridge between the mobile App Inventor UI and the hardware layer.
+
+Main functions:
+- Provides REST API endpoints for remote control  
 - Sends TCP commands to the ESP32 bridge  
-- Integrates camera stream and GNSS map visualization (optional)  
-- Supports token-based access for safety
+- Optionally integrates camera streaming and GNSS map visualization  
+- Supports basic token-based authentication for secure access  
 
 ---
 
-## ?숋툘 Architecture
+## Architecture
 
 | Layer | Role | Folder |
 |-------|------|--------|
-| **App Inventor** | User control UI (mobile/tablet) | - |
-| **Flask (Python)** | Command API + TCP relay | `server/app/` |
-| **ESP32** | Wi-Fi TCP server (port 5001) | `esp32/` |
-| **STM32** | Hardware control via UART | `stm32/` |
+| App Inventor | User control interface (mobile/tablet) | - |
+| Flask (Python) | Command API and TCP relay bridge | `server/app/` |
+| ESP32 | Wi-Fi TCP server (port 5001) | `esp32/` |
+| STM32 | Hardware control via UART | `stm32/` |
 
 ---
 
-## ?㎥ REST API Summary
+## REST API Summary
 
 | Method | Endpoint | Description |
 |--------|-----------|-------------|
-| `GET` | `/healthz` | Health check (returns `{ok:true}`) |
-| `POST` | `/api/cmd` | Send control command to ESP32 |
-| `POST` | `/api/video` | (optional) Start/stop camera stream |
+| `GET` | `/healthz` | Health check – returns `{ "ok": true }` |
+| `POST` | `/api/cmd` | Send a control command to the ESP32 |
+| `POST` | `/api/video` | (optional) Start or stop camera streaming |
 | `POST` | `/api/gnss` | (optional) Update GNSS coordinates |
 
-Example request (from App Inventor):
+**Example request (from App Inventor):**
 ```json
 {
   "token": "changeme-robot",
   "cmd": "FWD"
 }
-?㎞ File Structure
+File Structure
 server/
-?쒋?? app/
-??  ?쒋?? GNSS_SERVER.py        # Flask main app
-??  ?쒋?? services/
-??  ??  ?붴?? tcp_client.py     # TCP communication with ESP32
-??  ?붴?? templates/            # (optional) HTML UI templates
-?쒋?? requirements.txt
-?붴?? README.md
-?㎨ TCP Connection Details
-ESP32 Host: 192.168.0.xx (set in tcp_client.py)
+├─ app/
+│  ├─ GNSS_SERVER.py         # Flask main application
+│  ├─ services/
+│  │  └─ tcp_client.py       # TCP communication handler (Flask ↔ ESP32)
+│  └─ templates/             # (optional) HTML templates for visualization
+├─ requirements.txt
+└─ README.md
+TCP Connection Details
+Parameter	Description
+ESP32 Host	192.168.0.xx (set in tcp_client.py)
+Port	5001
+Timeout	1.5 seconds
+Protocol	Plain text, newline (\n) terminated commands
 
-Port: 5001
+Each Flask POST request triggers a TCP send event and waits for "ACK" response from the ESP32.
 
-Timeout: 1.5 sec
-
-Protocol: Plain text with \n line ending
-
-Each Flask POST ??triggers TCP send ??waits for "ACK" from ESP32.
-
-?? How to Run
-Install dependencies:
-
+How to Run
+1. Install Dependencies
 cd server
 python -m venv .venv
-.\.venv\Scripts\activate
+source .venv/bin/activate        # Linux/Mac
+# OR
+.\.venv\Scripts\activate         # Windows PowerShell
 pip install -r requirements.txt
-Run server:
-
-python app\GNSS_SERVER.py
-App Inventor endpoint:
+2. Run the Flask Server
+python app/GNSS_SERVER.py
+Default API Endpoint for App Inventor:
 
 arduino
 http://<SERVER_IP>:8080/api/cmd
-?좑툘 Security
-Uses static token (API_TOKEN = "changeme-robot") for API calls
+Security Notes
+Uses a static API token (API_TOKEN = "changeme-robot") for all incoming requests.
 
-Add simple authentication or network whitelist if needed
+Add authentication or IP whitelisting for better protection.
 
-For external access, configure ngrok or port forwarding
+When using remote access, set up ngrok or port forwarding with a secure tunnel.
 
-?뵕 Related Layers
-ESP32 Firmware
+Related Components
+ESP32 Firmware: TCP–UART Bridge for command forwarding
 
-STM32 Firmware
+STM32 Firmware: Motor and servo controller
 
-ROS2 Integration
+ROS2 Layer: GNSS + Flask integration for data visualization
 
-?뫅?랅윊?Author
-Team KLON ??Korea University of Technology and Education
-Software: ?댁썝臾?(Python Flask server & control bridge)
-
+Maintained as part of the GNSS-Based Variable-Wheel Robot Project.
+Module: Flask Web Server and Control Bridge
 Last updated: 2025-10-11
-
