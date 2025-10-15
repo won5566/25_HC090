@@ -1,7 +1,7 @@
 
 # 2025년 한이음 드림업 공모전 README
 
-## 프로젝트 개요 (필수)
+## 프로젝트 개요
 
 ### 1-1. 프로젝트 소개
 - **프로젝트 명:** Mobile Robot Equipped with GNSS-Based Remote Steering and Variable Wheels
@@ -63,10 +63,9 @@
 
 ## 시스템 구성도
 
-> 이미지는 **직접 첨부 예정**  
-> 권장: GitHub Issues에 드래그&드롭 → 생성된 `https://github.com/.../assets/...` 링크를 아래에 삽입
-
 - **시스템 구성도:** (이미지 링크 입력 예정)
+
+- **Flow Chart:** (이미지 링크 입력 예정)
 
 
 ---
