@@ -1,195 +1,116 @@
-﻿# Mobile Robot Equipped with GNSS-Based Remote Steering and Variable Wheels
+🚀 Mobile Robot Equipped with GNSS-Based Remote Steering and Variable Wheels
 
-> **All-Terrain Mobile Robot** integrating multi-layer communication, GNSS localization, ROS2-based visualization, and real-time steering control for terrain adaptability.
+All-Terrain Mobile Robot integrating multi-layer communication, GNSS localization, ROS2-based visualization, and real-time steering control for terrain adaptability.
 
----
+💡 1. 프로젝트 개요
+1-1. 프로젝트 소개
 
-## Project Overview
+프로젝트 명: Mobile Robot Equipped with GNSS-Based Remote Steering and Variable Wheels
 
-This project presents an **all-terrain mobile robot** that integrates a **GNSS-based remote steering system** and a **variable-diameter wheel mechanism** to achieve precise motion control and terrain adaptability.
+프로젝트 정의: GNSS 기반 원격 조향 및 가변 휠 메커니즘을 결합하여 지형 적응성과 정밀 제어를 동시에 구현한 전지형 모바일 로봇
 
-Developed by **Team KLON (KOREATECH)**, the system combines embedded hardware (STM32, Arduino, ESP32), ROS2-based GNSS visualization, and a Flask-based remote UI.
+대표 이미지:
+[이미지 첨부 또는 링크 입력]
 
----
+1-2. 개발 배경 및 필요성
 
-## System Architecture
+[작성칸]
 
-<pre>
-[Tablet / App Inventor UI]
-        ↓ (TCP/IP commands)
-[Flask Web Server]
-        ↓
-[ESP32]  ← Wi-Fi TCP Relay
-        ↓
-[STM32 Controller]
- ├─ RS-485 → BLDC Motors (4WD)
- ├─ PWM   → Steering Servos (4WIS)
- └─ UART5 → ESP32 Command Interface
-        ↓
-[Arduino Mega Sub #1] → Wheel Alignment (IR Sensors)
-[Arduino Mega Sub #2] → 2-Axis Camera Gimbal (MPU6050 PID)
-</pre>
+1-3. 프로젝트 특장점
 
----
+GNSS 기반 고정밀 위치 인식 (RTK 기반 2cm 오차 이내)
 
-## Key Features
+ROS2 기반의 시각화 및 실시간 위치 추적
 
-| Category | Description |
-|-----------|-------------|
-| **GNSS Localization** | ZED-F9P RTK GNSS integrated with ROS2 NavSatFix; JSON bridge to Flask map visualization |
-| **Remote Control** | Real-time teleoperation via Flask Web UI and App Inventor joystick |
-| **Variable Wheel System** | 4-bar linkage mechanism allowing wheel radius change (140 mm ↔ 200 mm) |
-| **Independent Steering** | Servo-driven 0°–270° Ackermann steering for 4-wheel control |
-| **Auto Alignment** | IR-based wheel zero-position calibration (Arduino Sub #1) |
-| **Camera Stabilization** | 2-axis gimbal controlled by MPU6050 + PID (Arduino Sub #2) |
-| **Visualization** | Flask-based GNSS map + live video feed |
-| **Modular Architecture** | ROS2 + Flask + MCU layers separated for maintainability |
+Flask 웹 UI 및 App Inventor 원격 조작
 
----
+가변 지름 휠 메커니즘 (140mm ↔ 200mm)
 
-## Repository Structure
+독립 조향(4WIS) 및 전륜 구동(4WD)
 
-<pre>
-Mobile-Robot-Equipped-with-GNSS-Based-Remote-Steering-and-Variable-Wheels/
-│
-├─ appinventor/                  # Android joystick app (.aia + README)
-│
-├─ arduino/
-│  ├─ mega_sub1_ir_alignment/    # IR-based wheel alignment
-│  └─ mega_sub2_gimbal/          # 2-axis camera gimbal controller
-│
-├─ cad/
-│  ├─ Variable Wheel/                   # Variable-diameter wheel assembly
-│  ├─ Steering/                   # Steering gearbox assembly
-│  └─ Camera/                     # Gimbal camera bracket
-│
-├─ docs/                         # Papers, reports, and posters
-│
-├─ esp32/                        # TCP relay between Flask and STM32
-│
-├─ ros2/                         # GNSS→JSON bridge + Flask web visualization
-│
-├─ scripts/                      # Auto-execution and deployment scripts
-│
-├─ server/                       # Flask + TCP server core
-│
-└─ stm32/GNSS_STM32/             # Firmware: RS-485 (BLDC), PWM (servo), UART5 (ESP32)
-</pre>
+통신 모듈(ESP32)과 메인 컨트롤러(STM32) 간 TCP/IP 기반 제어
 
----
+1-4. 주요 기능
+구분	기능 설명
+GNSS Localization	ZED-F9P RTK GNSS 기반 실시간 위치 추적
+Remote Control	Flask 기반 UI + App Inventor 조이스틱 제어
+Variable Wheel System	휠 반경 조절 (140mm~200mm)
+Independent Steering	서보모터 기반 0°~270° 조향
+Auto Alignment	IR 센서 기반 휠 자동 보정
+Camera Stabilization	MPU6050 + PID 기반 2축 짐벌 제어
+Visualization	Flask 웹맵 + 실시간 영상 스트리밍
+1-5. 기대 효과 및 활용 분야
 
-## Software Highlights
+기대 효과:
 
-### ROS2 Layer
+지형 적응형 로봇 설계로 실험적/산업적 활용 가능성 확대
 
-- Converts **GNSS NavSatFix → JSON** for Flask integration  
-- Publishes `/position` API for live GNSS visualization  
-- Built with **ROS2 Humble** on **Jetson Orin Nano (Ubuntu 22.04)**  
+GNSS, ROS2, 임베디드 통합 시스템 학습용 오픈 플랫폼
 
----
+활용 분야:
 
-### Flask Web Server
+재난 대응, 농업 자동화, 국방·감시, 교육·연구 등
 
-- Renders map visualization and streams live video  
-- Relays TCP commands to ESP32  
-- Accessible remotely via **port forwarding or ngrok**
+1-6. 기술 스택
+분야	기술
+임베디드	STM32F429ZIT6, ESP32, Arduino Mega 2560
+통신	UART, RS-485, TCP/IP, PWM
+소프트웨어	ROS2 Humble, Python 3.10, Flask, OpenCV
+디자인	SolidWorks 2023, MIT App Inventor 2
+센서	ZED-F9P GNSS, MPU6050 IMU, IR Sensor
+플랫폼	Jetson Orin Nano (Ubuntu 22.04)
+기타	Docker, GitHub Actions, AWS (선택 사항)
+💡 2. 팀원 소개
+사진	이름	역할
+[사진 첨부]	[이름]	[역할]
+[사진 첨부]	[이름]	[역할]
+[사진 첨부]	[이름]	[역할]
+[사진 첨부]	[이름]	[역할]
+[사진 첨부]	[멘토 이름]	[멘토 역할]
+💡 3. 시스템 구성도
 
----
+시스템 전체 구성, 통신 흐름, 하드웨어 블록도, ROS2-플라스크 연동 구조 등을 이미지로 표현해주세요.
 
-### App Inventor Joystick
+시스템 구성도:
+[이미지 첨부 또는 링크 입력]
 
-- Sends directional commands (Front / Stop / Back) via TCP  
-- Switches **wheel modes (CW / NORMAL / CCW)**  
-- Adjusts steering angle through slider input  
-- Displays GNSS map + Flask live video feed  
+엔티티 관계도 (선택):
+[이미지 첨부 또는 링크 입력]
 
----
+💡 4. 작품 소개영상
 
-### STM32 Main Controller
+아래 형식으로 유튜브 썸네일 및 링크를 등록해주세요.
 
-- Controls **BLDC motors (RS-485)** and **servo steering (PWM)**  
-- Communicates with ESP32 via **UART5 (115200 bps)**  
-- Performs **mode switching, offset correction, and motion control**
+[![영상 제목](유튜브 썸네일 URL)](유튜브 영상 URL)
 
----
 
-### Arduino Submodules
+📹 예시:
 
-| Submodule | Function |
-|------------|-----------|
-| **Sub #1 (Mega)** | IR sensor-based automatic wheel alignment |
-| **Sub #2 (Mega)** | 2-axis gimbal stabilization using MPU6050 PID |
 
----
+💡 5. 핵심 소스코드
 
-## Mechanical Design
+대표적인 코드(예: Flask 제어, GNSS ROS2 변환, STM32 통신 등)를 첨부해주세요.
 
-All CAD models are designed in **SolidWorks 2023**, divided into three major subsystems.
+# [작성칸] 예시: Flask 서버에서 GNSS 좌표를 실시간 송신하는 코드 예시
 
-| Subsystem | Description |
-|------------|-------------|
-| **Variable Wheel** | Adjustable 4-bar linkage wheel (Ø140–200 mm) |
-| **Steering Gearbox** | Servo-driven Ackermann steering assembly |
-| **Camera Gimbal** | Dual-axis stabilization mount for onboard camera |
+from flask import Flask, jsonify
+import serial, json
 
-> Export formats: `.SLDPRT`, `.SLDASM`, `.STEP`, `.STL`
+app = Flask(__name__)
+ser = serial.Serial('/dev/ttyUSB0', 115200)
 
----
+@app.route('/position')
+def position():
+    line = ser.readline().decode().strip()
+    data = json.loads(line)
+    return jsonify({"lat": data['lat'], "lon": data['lon']})
 
-## Documentation
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
 
-| File | Description |
-|------|-------------|
-| `25년_SW개발_HW제작성설계서_응용하드웨어.pptx` | Hardware and software design specification for the Applied Hardware project |
-| `2025 한이음 드림업 발표.pptx` | Final presentation for the 2025 Hanium Dream-Up project |
-| `2025년 한이음 드림업 개발보고서.hwp` | Development report for the 2025 Hanium Dream-Up project |
-| `논문.hwp` | Research paper on the GNSS-based variable-wheel terrain robot |
-| `졸작 포스터논문.pptx` | Capstone project poster presentation document |
-
----
-
-## Technical Stack
-
-| Domain | Tools / Hardware |
-|--------|------------------|
-| **Microcontrollers** | STM32F429ZIT6, ESP32, Arduino Mega 2560 |
-| **Communication** | UART, RS-485, TCP/IP, PWM |
-| **Software** | ROS2 Humble, Python 3.10, Flask, OpenCV |
-| **Design Tools** | SolidWorks 2023, MIT App Inventor 2 |
-| **Sensors** | ZED-F9P GNSS, MPU6050 IMU, IR Sensors |
-| **Platform** | Jetson Orin Nano (Ubuntu 22.04), Windows 11 |
-
----
-
-## Performance & Results
-
-- **RTK-GNSS Precision:** RMS ≈ 2.3 cm (Max Error < 4 cm)  
-- **Steering Response Delay:** < 100 ms  
-- **Stair Climbing Capability:** up to 15 cm step height  
-- **Long-term Stability:** > 30 min continuous operation  
-- **Full Integration:** Indoor + Outdoor tested  
-
----
-
-## Application Fields
-
-| Field | Example Use |
-|--------|--------------|
-| **Disaster Response** | Remote rescue in hazardous environments |
-| **Agriculture** | GNSS-based crop monitoring and control |
-| **Defense / Surveillance** | Remote observation and reconnaissance |
-| **Education** | Learning platform for GNSS, ROS2, and embedded systems |
-
----
-
-## Summary
-
-**Structurally Complete** – Independent HW · SW · Web · UI layers  
-**Professionally Documented** – Each subsystem has its own README  
-**Public & Reproducible** – Ready for academic or competition use  
-**Demonstrated Integration** – GNSS-based, real-time, terrain-adaptive robot  
-
----
-
-[GitHub Repository](https://github.com/won5566/Mobile-Robot-Equipped-with-GNSS-Based-Remote-Steering-and-Variable-Wheels)
-
+💡 추가 정보
+항목	내용
+프로젝트 번호	[예: 25_HCXXX]
+GitHub 저장소 주소	https://github.com/[깃허브계정]/[프로젝트번호]
+문서 자료	발표자료, 보고서, 논문 등은 /docs 폴더 참고
+CAD 설계 파일	SolidWorks .SLDPRT, .SLDASM, .STEP 형식 지원
