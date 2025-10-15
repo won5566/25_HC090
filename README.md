@@ -73,8 +73,11 @@
 
 ## 작품 소개영상
 
-[![프로젝트 소개 영상](https://img.youtube.com/vi/KRKrqYnISS0/0.jpg)](https://youtu.be/KRKrqYnISS0?si=5UeAExnnUVnlLwTY)
+<a href="https://youtu.be/KRKrqYnISS0?si=5UeAExnnUVnlLwTY" target="_blank">
+  <img width="560" alt="프로젝트 소개 영상" src="https://github.com/user-attachments/assets/f4012f9b-2f90-451e-8f31-3ac9ab0d58cb" />
+</a>
 
+> ▶ 이미지를 클릭하면 유튜브에서 바로 재생됩니다.
 
 ---
 
