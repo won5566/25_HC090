@@ -74,10 +74,10 @@
 ## 작품 소개영상
 
 <a href="https://youtu.be/KRKrqYnISS0?si=5UeAExnnUVnlLwTY" target="_blank">
-  <img width="560" alt="프로젝트 소개 영상" src="https://github.com/user-attachments/assets/f4012f9b-2f90-451e-8f31-3ac9ab0d58cb" />
+  <img src="https://github.com/user-attachments/assets/aa436e09-79fd-4b26-84e7-2259dffecb78" width="600" alt="GNSS 기반 원격제어 스티어링 가변 휠 주행 로봇 영상 썸네일">
 </a>
 
-> ▶ 이미지를 클릭하면 유튜브에서 바로 재생됩니다.
+> ▶ 이미를 클릭하면 유튜브 영상이 새 탭에서 재생됩니다.
 
 ---
 
