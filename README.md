@@ -53,7 +53,7 @@
 
 | 사진 | 이름 | 역할 |
 |:---:|:---:|:---|
-| <img src="https://github.com/user-attachments/assets/PLACEHOLDER_JG" width="100" height="120" alt="김진겸"> | **김진겸 (팀장)** | 모바일 UI(App Inventor) 개발 · 휠 정렬(IR 센서) 제어 담당 |
+| <img src="https://github.com/user-attachments/assets/52430eb1-d622-41ce-b475-ce35062142aa" width="100" height="120" alt="김진겸"> | **김진겸 (팀장)** | 모바일 UI(App Inventor) 개발 · 휠 정렬(IR 센서) 제어 담당 |
 | <img src="https://github.com/user-attachments/assets/89d5b5e9-3e84-4370-8a89-fe7a86e171c1" width="100" height="120" alt="김형준"> | **김형준** | RTK-GNSS 위치 인식 · 2축 카메라 짐벌 제어 |
 | <img src="https://github.com/user-attachments/assets/3e6b5a1c-4460-4a50-a415-82bbf676019e" width="100" height="120" alt="이광민"> | **이광민** | 기구 및 샤시 설계 · 전장 하드웨어 통합 |
 | <img src="https://github.com/user-attachments/assets/3c08e585-0d89-45f7-9535-9dab7630240f" width="100" height="120" alt="이원무"> | **이원무** | STM32 펌웨어 개발 · 포트포워딩 · 통신 프로토콜 설계 |
