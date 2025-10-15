@@ -1,165 +1,279 @@
-# 🚀 Mobile Robot Equipped with GNSS-Based Remote Steering and Variable Wheels  
 
-> **All-Terrain Mobile Robot** integrating multi-layer communication, GNSS localization, ROS2-based visualization, and real-time steering control for terrain adaptability.  
+# 2025년 한이음 드림업 공모전 README
 
----
+## 프로젝트 개요 (필수)
 
-## 💡 1. 프로젝트 개요  
+### 1-1. 프로젝트 소개
+- **프로젝트 명:** Mobile Robot Equipped with GNSS-Based Remote Steering and Variable Wheels
+- **프로젝트 정의:** GNSS 기반 원격 조향과 가변 지름 휠 메커니즘을 결합해 지형 적응성과 정밀 제어를 구현한 전지형(ATV) 모바일 로봇
+- **대표 이미지:** *(직접 첨부 예정 / GitHub Issues 업로드 링크 사용 권장)*
 
-### **1-1. 프로젝트 소개**  
-- **프로젝트 명:** Mobile Robot Equipped with GNSS-Based Remote Steering and Variable Wheels  
-- **프로젝트 정의:**  
-  GNSS 기반 원격 조향 및 가변 휠 메커니즘을 결합하여 지형 적응성과 정밀 제어를 동시에 구현한 전지형 모바일 로봇  
-- **대표 이미지:**  
-  [이미지 첨부 또는 링크 입력]
+### 1-2. 개발 배경 및 필요성
+현대의 이동 로봇은 특정 지형에 국한되거나 제어 안정성이 떨어지는 경우가 많습니다. 본 프로젝트는 **RTK-GNSS 기반 고정밀 위치 인식**, **가변 반경 휠 구조(Ø140–200mm)**, **ROS2 + Flask + MCU 계층형 아키텍처**를 통해 다양한 지형(도로, 모래, 잔디, 경사면)에서도 안정적인 주행과 원격 제어를 가능하게 합니다.
 
----
+### 1-3. 프로젝트 특장점
+- RTK 보정 GNSS(±수 cm급)와 ROS2 시각화 연동
+- Flask 웹 UI + App Inventor 원격 조작(조이스틱/모드 전환)
+- 가변 휠 반경(140 ↔ 200 mm)로 지형 대응성 향상
+- 독립 4륜 조향(4WIS) + 4륜 구동(4WD)
+- IR 센서 기반 휠 자동 정렬, 2축 짐벌 카메라 안정화
+- 계층형 구조(ROS2/서버/MCU)로 유지보수 및 확장 용이
 
-### **1-2. 개발 배경 및 필요성**  
-현대의 이동 로봇은 특정 지형에서만 동작하거나 제어 안정성이 떨어지는 경우가 많습니다. 본 프로젝트는 **GNSS 기반 위치 인식**과 **가변 반경 휠 구조**를 통해, 다양한 지형 환경(도로, 모래, 잔디, 경사면 등)에서도 안정적인 이동과 원격 제어가 가능하도록 개발되었습니다.  
-또한 **ROS2 기반 실시간 위치 시각화 시스템**과 **Flask 웹 서버**, **App Inventor 원격 UI**를 통해 로봇의 위치, 자세, 영상 정보를 실시간으로 통합 관리할 수 있습니다.
+### 1-4. 주요 기능
+| 구분 | 설명 |
+|---|---|
+| GNSS Localization | ZED-F9P RTK GNSS → ROS2 NavSatFix → JSON/맵 시각화 |
+| Remote Control | Flask Web UI + App Inventor 조이스틱 |
+| Variable Wheel | 반경 가변(Ø140–200mm) 4-bar 링크 |
+| Independent Steering | 0°–270° 서보 조향(4WIS) |
+| Auto Alignment | IR 기반 휠 제로 포지션 보정 |
+| Camera Stabilization | MPU6050 + PID 2축 짐벌 |
+| Visualization | GNSS 맵 + 라이브 비디오 스트림 |
+| Modular Architecture | ROS2 / Flask / MCU 분리 설계 |
 
----
+### 1-5. 기대 효과 및 활용 분야
+- **기대 효과:** 지형 적응형 로봇 플랫폼, 정밀 원격 제어, 연구·교육용 통합 학습 자료화
+- **활용 분야:** 재난 대응, 농업 자동화, 국방/감시, 교육·연구
 
-### **1-3. 프로젝트 특장점**  
-- GNSS 기반 고정밀 위치 인식 (RTK 보정으로 ±2.3cm 정확도 확보)  
-- ROS2 기반 실시간 위치 데이터 송수신 및 시각화  
-- Flask 웹 서버를 통한 실시간 GNSS 지도 및 영상 스트리밍  
-- App Inventor로 제작된 모바일 조이스틱 원격 제어  
-- 휠 반경 가변(140mm ↔ 200mm) 메커니즘으로 다양한 지형 대응  
-- 독립 4륜 조향(4WIS) 및 4륜 구동(4WD) 지원  
-- IR 센서를 활용한 휠 정렬 자동 보정  
-- 2축 짐벌 기반 카메라 안정화 제어  
-
----
-
-### **1-4. 주요 기능**  
-
-| 구분 | 기능 설명 |
-|------|------------|
-| **GNSS Localization** | ZED-F9P RTK GNSS 기반 위치 추적, ROS2 NavSatFix 메시지 변환 |
-| **Remote Control** | Flask Web UI + App Inventor 조이스틱 원격 제어 |
-| **Variable Wheel System** | 휠 반경 가변 메커니즘(140~200mm)으로 지형 대응 |
-| **Independent Steering** | 서보모터 기반 0°~270° 범위 조향 |
-| **Auto Alignment** | IR 센서 기반 휠 자동 보정 기능 |
-| **Camera Stabilization** | MPU6050 + PID 기반 2축 짐벌 제어 |
-| **Visualization** | Flask 웹맵 및 실시간 비디오 스트리밍 |
-| **Modular Architecture** | ROS2, Flask, MCU 계층 분리로 유지보수 용이 |
-
----
-
-### **1-5. 기대 효과 및 활용 분야**  
-
-- **기대 효과:**  
-  - 지형 적응형 로봇 플랫폼 개발로 실험적·산업적 활용 가능성 확대  
-  - GNSS·ROS2·임베디드 통합 시스템 학습용 교육 플랫폼 제공  
-  - 이동 로봇 분야의 정밀 제어 및 자율주행 응용 확장  
-
-- **활용 분야:**  
-  - 재난 대응 및 원격 구조  
-  - 농업 자동화 (GNSS 기반 주행)  
-  - 국방/감시 시스템  
-  - 로봇 교육 및 연구 실험 플랫폼  
-
----
-
-### **1-6. 기술 스택**  
-
+### 1-6. 기술 스택
 | 분야 | 기술 |
-|------|------|
-| **임베디드 하드웨어** | STM32F429ZIT6, ESP32, Arduino Mega 2560 |
-| **통신** | UART, RS-485, TCP/IP, PWM |
-| **소프트웨어** | ROS2 Humble, Python 3.10, Flask, OpenCV |
-| **디자인 툴** | SolidWorks 2023, MIT App Inventor 2 |
-| **센서** | ZED-F9P GNSS, MPU6050 IMU, IR Sensor |
-| **플랫폼** | Jetson Orin Nano (Ubuntu 22.04) |
-| **버전 관리 및 배포** | GitHub Actions, Docker, AWS (선택사항) |
+|---|---|
+| 임베디드 | STM32F429, ESP32, Arduino Mega 2560 |
+| 통신 | UART, RS-485, TCP/IP, PWM |
+| 소프트웨어 | ROS2 Humble, Python 3.10, Flask, OpenCV |
+| 디자인 | SolidWorks 2023, MIT App Inventor 2 |
+| 센서 | ZED-F9P GNSS, MPU6050 IMU, IR Sensor |
+| 플랫폼 | Jetson Orin Nano (Ubuntu 22.04) |
+
 
 ---
 
-## 💡 2. 팀원 소개  
+## 팀원 소개
 
 | 사진 | 이름 | 역할 |
-|:---:|:---:|:---:|
-| [사진 첨부] | [이름] | 하드웨어 설계 및 메커니즘 개발 |
-| [사진 첨부] | [이름] | 임베디드 제어 (STM32 / Arduino) |
-| [사진 첨부] | [이름] | Flask 서버 및 ROS2 통신 모듈 개발 |
-| [사진 첨부] | [이름] | App Inventor 모바일 UI 설계 |
-| [사진 첨부] | [멘토 이름] | 프로젝트 멘토 / 기술 자문 |
+|:---:|:---:|:---|
+| ![김진겸](https://github.com/user-attachments/assets/PLACEHOLDER_JG) | **김진겸 (팀장)** | 모바일 UI(App Inventor) 개발 · 휠 정렬(IR 센서) 제어 담당 |
+| ![김형준](https://github.com/user-attachments/assets/PLACEHOLDER_HJ) | **김형준** | RTK-GNSS 위치 인식 · 2축 카메라 짐벌 제어 |
+| ![이광민](https://github.com/user-attachments/assets/PLACEHOLDER_GM) | **이광민** | 기구 및 샤시 설계 · 전장 하드웨어 통합 |
+| ![이원무](https://github.com/user-attachments/assets/PLACEHOLDER_WM) | **이원무** | STM32 펌웨어 개발 · 포트포워딩 · 통신 프로토콜 설계 |
+| ![김관영](https://github.com/user-attachments/assets/PLACEHOLDER_MENTOR) | **김관영 (멘토)** | 임베디드 시스템 및 로보틱스 기술 자문 |
+
 
 ---
 
-## 💡 3. 시스템 구성도  
+## 시스템 구성도
 
-> 시스템 아키텍처, 통신 흐름도, 하드웨어 블록도를 첨부해주세요.  
+> 이미지는 **직접 첨부 예정**  
+> 권장: GitHub Issues에 드래그&드롭 → 생성된 `https://github.com/.../assets/...` 링크를 아래에 삽입
 
-**예시 텍스트 구조도:**  
+- **시스템 구성도:** (이미지 링크 입력 예정)
+
+
+---
+
+## 작품 소개영상
+
+[![프로젝트 소개 영상 바로가기](https://img.youtube.com/vi/KRKrqYnISS0/0.jpg)](https://youtu.be/KRKrqYnISS0?si=5UeAExnnUVnlLwTY)
+
+
+---
+
+## 핵심 소스코드
+
+> STM32 + RS-485 + TCP(LwIP) 기반 BLDC 제어 및 가변 휠/조향 제어의 메인 루프 발췌본입니다.
+
+```c
+/* USER CODE BEGIN Header */
+/**
+  ******************************************************************************
+  * @file           : main.c
+  * @brief          : Main program body - Motor Control via RS485 and TCP
+  * @details        : This firmware sets up TCP server communication using LwIP
+  *                   and controls BLDC motors via RS-485 commands. PWM output removed.
+  ******************************************************************************
+  */
+
+#include <stdlib.h>
+/* USER CODE END Header */
+/* Includes ------------------------------------------------------------------*/
+#include "main.h"
+#include "lwip.h"
+
+/* Private includes ----------------------------------------------------------*/
+/* USER CODE BEGIN Includes */
+#define SERVO_MIN_PULSE 500
+#define SERVO_MAX_PULSE 2500
+#define SERVO_MAX_ANGLE 270
+/* USER CODE END Includes */
+
+/* Private typedef -----------------------------------------------------------*/
+/* USER CODE BEGIN PTD */
+
+/* USER CODE END PTD */
+
+/* Private define ------------------------------------------------------------*/
+/* USER CODE BEGIN PD */
+
+/* USER CODE END PD */
+
+/* Private macro -------------------------------------------------------------*/
+/* USER CODE BEGIN PM */
+
+/* USER CODE END PM */
+
+/* Private variables ---------------------------------------------------------*/
+TIM_HandleTypeDef htim3;
+TIM_HandleTypeDef htim4;
+
+UART_HandleTypeDef huart4;
+UART_HandleTypeDef huart5;
+UART_HandleTypeDef huart6;
+
+/* USER CODE BEGIN PV */
+uint8_t cmdOn0 [] =  {0xFF,0xFE,0x00,0x03,0xF0,0x0C,0x00};  // MOTOR0 ON
+uint8_t cmdOn1 [] =  {0xFF,0xFE,0x01,0x03,0xEF,0x0C,0x00};  // MOTOR1 ON
+uint8_t cmdOn2 [] =  {0xFF,0xFE,0x02,0x03,0xEE,0x0C,0x00};  // MOTOR2 ON
+uint8_t cmdOn3 [] =  {0xFF,0xFE,0x03,0x03,0xED,0x0C,0x00};  // MOTOR3 ON
+uint8_t cmdOff0[] =  {0xFF,0xFE,0x00,0x03,0xEF,0x0C,0x01};  // MOTOR0 OFF
+uint8_t cmdOff1[] =  {0xFF,0xFE,0x01,0x03,0xEE,0x0C,0x01};  // MOTOR1 OFF
+uint8_t cmdOff2[] =  {0xFF,0xFE,0x02,0x03,0xED,0x0C,0x01};  // MOTOR2 OFF
+uint8_t cmdOff3[] =  {0xFF,0xFE,0x03,0x03,0xEC,0x0C,0x01};  // MOTOR3 OFF
+uint8_t rx_data = 0;
+uint8_t CENTER_Speed = 8;
+uint8_t CW_Speed = 2;
+uint8_t CCW_Speed = 2;
+uint8_t ROTATE_Speed = 5;
+uint8_t VERTICAL_Speed = 5;
+uint8_t Wheel1 = 0;
+uint8_t Wheel2 = 0;
+uint8_t Wheel3 = 0;
+uint8_t Wheel4 = 0;
+
+typedef enum {STATE_STOP, STATE_FORWARD, STATE_BACKWARD} MotorState;   //BLDC MOTOR STATE
+typedef enum {STATE_CENTER, STATE_CW, STATE_CCW} WheelState;   //VARIABLE WHEEL STATE
+typedef enum {DRIVE, ROTATE, VERTICAL} ModeState;   //DRIVEMODE STATE
+MotorState currentState = STATE_STOP;     //BLDC MOTOR START STATE
+WheelState State = STATE_CENTER;   //VARIABLE WHEEL START STATE
+ModeState DriveState = DRIVE;
+/* USER CODE END PV */
+
+/* Private function prototypes -----------------------------------------------*/
+void SystemClock_Config(void);
+static void MX_GPIO_Init(void);
+static void MX_USART6_UART_Init(void);
+static void MX_TIM4_Init(void);
+static void MX_UART5_Init(void);
+static void MX_TIM3_Init(void);
+static void MX_UART4_Init(void);
+/* USER CODE BEGIN PFP */
+void RS485_Send(uint8_t *pData, uint16_t size);
+void accelerateSpeedControl(uint8_t id, uint8_t dir, float rpm, uint8_t t);
+void setCommBaudrate(uint8_t id, uint32_t baud);
+void setMotorRatedSpeed(uint8_t id, uint16_t rpm);
+void Set_Servo_Angle(TIM_HandleTypeDef* htim, uint32_t Channel, int16_t angle);
+void ApplyTire(int8_t offset);
+void ApplySteering(int8_t offset);
+/* USER CODE END PFP */
+
+/* Private user code ---------------------------------------------------------*/
+/* USER CODE BEGIN 0 */
+
+/* USER CODE END 0 */
+
+/**
+  * @brief  The application entry point.
+  * @retval int
+  */
+int main(void)
+{
+  HAL_Init();
+  SystemClock_Config();
+  MX_GPIO_Init();
+  MX_USART6_UART_Init();
+  MX_LWIP_Init();
+  MX_TIM4_Init();
+  MX_UART5_Init();
+  MX_TIM3_Init();
+  MX_UART4_Init();
+
+  setMotorRatedSpeed(0, 5);
+  setMotorRatedSpeed(1, 5);
+  setMotorRatedSpeed(2, 5);
+  setMotorRatedSpeed(3, 5);
+
+  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
+  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_2);
+  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_3);
+  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_4);
+
+  HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_1);
+  HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_2);
+  HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_3);
+  HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_4);
+
+  HAL_UART_Receive_IT(&huart5, &rx_data, 1);
+
+  Set_Servo_Angle(&htim4, TIM_CHANNEL_1, 135);
+  Set_Servo_Angle(&htim4, TIM_CHANNEL_2, 130);
+  Set_Servo_Angle(&htim4, TIM_CHANNEL_3, 145);
+  Set_Servo_Angle(&htim4, TIM_CHANNEL_4, 132);
+  ApplySteering(0);
+
+  while (1) {
+    // main loop
+  }
+}
+
+void ApplyTire(int8_t offset)
+{
+  int16_t base_angle = 135;
+  int16_t target = base_angle + offset;
+  if (target > 270) target = 270;
+  if (target < 0)   target = 0;
+  Set_Servo_Angle(&htim4, TIM_CHANNEL_1, target);
+  Set_Servo_Angle(&htim4, TIM_CHANNEL_2, target);
+  Set_Servo_Angle(&htim4, TIM_CHANNEL_3, target);
+  Set_Servo_Angle(&htim4, TIM_CHANNEL_4, target);
+}
+
+void ApplySteering(int8_t offset)
+{
+  int16_t base_angle = 135;
+  int16_t target = base_angle + offset;
+  int16_t target1 = base_angle - offset;
+  if (target > 270) target = 270;
+  if (target < 0)   target = 0;
+  Set_Servo_Angle(&htim3, TIM_CHANNEL_1, target);
+  Set_Servo_Angle(&htim3, TIM_CHANNEL_2, target1);
+  Set_Servo_Angle(&htim3, TIM_CHANNEL_3, target);
+  Set_Servo_Angle(&htim3, TIM_CHANNEL_4, target1);
+}
+```
+
+
+## 프로젝트 번호 및 저장소 정보 
+
+- **프로젝트 번호:** `25_HC090`  
+- **GitHub 저장소:** https://github.com/won5566/25_HC090.git
+
+
+---
+
+## 참고: 저장소 구조
 
 ```
-[Tablet / App Inventor UI]
-        ↓ (TCP/IP commands)
-[Flask Web Server]
-        ↓
-[ESP32]  ← Wi-Fi TCP Relay
-        ↓
-[STM32 Controller]
- ├─ RS-485 → BLDC Motors (4WD)
- ├─ PWM   → Steering Servos (4WIS)
- └─ UART5 → ESP32 Command Interface
-        ↓
-[Arduino Mega Sub #1] → Wheel Alignment (IR Sensors)
-[Arduino Mega Sub #2] → 2-Axis Camera Gimbal (MPU6050 PID)
+.
+├─ appinventor/                # Android 조이스틱 앱 (.aia + README)
+├─ arduino/
+│  ├─ mega_sub1_ir_alignment/  # IR 휠 자동 정렬
+│  └─ mega_sub2_gimbal/        # 2축 짐벌 PID 제어
+├─ cad/                        # Variable Wheel, Steering, Camera CAD
+├─ docs/                       # 발표, 보고서, 논문
+├─ esp32/                      # Flask ↔ STM32 TCP 릴레이
+├─ ros2/                       # GNSS→JSON 브리지 + 웹 시각화
+├─ server/                     # Flask + TCP 서버
+├─ stm32/                      # RS-485(BLDC), PWM(Servo), UART5(ESP32)
+└─ README.md
 ```
-
-**시스템 구성도 이미지:**  
-[이미지 첨부 또는 링크 입력]  
-
-**엔티티 관계도 (선택):**  
-[이미지 첨부 또는 링크 입력]
-
----
-
-## 💡 4. 작품 소개영상  
-
-[![영상 제목](유튜브 썸네일 URL)](유튜브 영상 URL)
-
-예시:  
-[![한이음 드림업 프로젝트 소개](https://github.com/user-attachments/assets/16435f88-e7d3-4e45-a128-3d32648d2d84)](https://youtu.be/YcD3Lbn2FRI?si=isERqIAT9Aqvdqwp)
-
----
-
-## 💡 5. 핵심 소스코드  
-
-대표적인 Flask 기반 GNSS 위치 송신 코드 예시입니다.
-
-```python
-from flask import Flask, jsonify
-import serial, json
-
-app = Flask(__name__)
-ser = serial.Serial('/dev/ttyUSB0', 115200)
-
-@app.route('/position')
-def position():
-    line = ser.readline().decode().strip()
-    data = json.loads(line)
-    return jsonify({"lat": data['lat'], "lon": data['lon']})
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
-```
-
-[작성칸: 다른 핵심 소스코드로 교체 가능]
-
----
-
-## 💡 추가 정보  
-
-| 항목 | 내용 |
-|------|------|
-| **프로젝트 번호** | [예: 25_HCXXX] |
-| **GitHub 저장소 주소** | https://github.com/[깃허브계정]/[프로젝트번호] |
-| **문서 자료** | 발표자료, 보고서, 논문 등은 `/docs` 폴더 참고 |
-| **CAD 설계 파일** | SolidWorks `.SLDPRT`, `.SLDASM`, `.STEP` 형식 제공 |
 
 ---
