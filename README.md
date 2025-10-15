@@ -65,9 +65,9 @@
 ## 시스템 구성도
 
 - **시스템 구성도:** (이미지 링크 입력 예정)
-![시스템 구성도]([(https://github.com/user-attachments/assets/3ca71442-1af0-4a4f-8f23-4eb5f44d2ca8])
+![시스템 구성도](https://github.com/user-attachments/assets/3ca71442-1af0-4a4f-8f23-4eb5f44d2ca8)
 - **Flow Chart:** (이미지 링크 입력 예정)
-![Flow Chart]([https://github.com/user-attachments/assets/4de063cc-3acd-4e09-9371-e8ec3ee3c217])
+![Flow Chart](https://github.com/user-attachments/assets/4de063cc-3acd-4e09-9371-e8ec3ee3c217]
 
 ---
 
