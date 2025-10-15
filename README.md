@@ -6,7 +6,8 @@
 ### 1-1. 프로젝트 소개
 - **프로젝트 명:** Mobile Robot Equipped with GNSS-Based Remote Steering and Variable Wheels
 - **프로젝트 정의:** GNSS 기반 원격 조향과 가변 지름 휠 메커니즘을 결합해 지형 적응성과 정밀 제어를 구현한 전지형(ATV) 모바일 로봇
-- **대표 이미지:** *https://github.com/user-attachments/assets/c05cce6f-0488-4bf0-afa9-3d8789106f38*
+![대표 이미지](https://github.com/user-attachments/assets/c05cce6f-0488-4bf0-afa9-3d8789106f38)
+
 
 ### 1-2. 개발 배경 및 필요성
 현대의 이동 로봇은 특정 지형에 국한되거나 제어 안정성이 떨어지는 경우가 많습니다. 본 프로젝트는 **RTK-GNSS 기반 고정밀 위치 인식**, **가변 반경 휠 구조(Ø140–200mm)**, **ROS2 + Flask + MCU 계층형 아키텍처**를 통해 다양한 지형(도로, 모래, 잔디, 경사면)에서도 안정적인 주행과 원격 제어를 가능하게 합니다.
