@@ -163,6 +163,3 @@ if __name__ == '__main__':
 | **CAD 설계 파일** | SolidWorks `.SLDPRT`, `.SLDASM`, `.STEP` 형식 제공 |
 
 ---
-
-> ✨ 본 README는 [GPT Online (https://gptonline.ai/ko/)](https://gptonline.ai/ko/) 의 도움으로 작성되었습니다.  
-> 자유롭게 수정 및 확장하여 한이음 드림업 공모전에 맞게 제출하세요 🙌
