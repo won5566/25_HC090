@@ -73,7 +73,7 @@
 
 ## 작품 소개영상
 
-[![프로젝트 소개 영상 바로가기](https://img.youtube.com/vi/KRKrqYnISS0/0.jpg)](https://youtu.be/KRKrqYnISS0?si=5UeAExnnUVnlLwTY)
+[![프로젝트 소개 영상](https://img.youtube.com/vi/KRKrqYnISS0/0.jpg)](https://youtu.be/KRKrqYnISS0?si=5UeAExnnUVnlLwTY)
 
 
 ---
