@@ -57,7 +57,7 @@
 | <img src="https://github.com/user-attachments/assets/89d5b5e9-3e84-4370-8a89-fe7a86e171c1" width="100" height="120" alt="김형준"> | **김형준** | RTK-GNSS 위치 인식 · 2축 카메라 짐벌 제어 |
 | <img src="https://github.com/user-attachments/assets/3e6b5a1c-4460-4a50-a415-82bbf676019e" width="100" height="120" alt="이광민"> | **이광민** | 기구 및 샤시 설계 · 전장 하드웨어 통합 |
 | <img src="https://github.com/user-attachments/assets/3c08e585-0d89-45f7-9535-9dab7630240f" width="100" height="120" alt="이원무"> | **이원무** | STM32 펌웨어 개발 · 포트포워딩 · 통신 프로토콜 설계 |
-| <img src="https://github.com/user-attachments/assets/PLACEHOLDER_MENTOR" width="100" height="120" alt="김관영"> | **김관영 (멘토)** | 임베디드 시스템 및 로보틱스 기술 자문 |
+| <img src="https://github.com/user-attachments/assets/b9469bf2-5497-46ec-899a-6d73a6699721" width="100" height="120" alt="김관영"> | **김관영 (멘토)** | 임베디드 시스템 및 로보틱스 기술 자문 |
 
 
 ---
