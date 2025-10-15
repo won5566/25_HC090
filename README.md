@@ -55,7 +55,7 @@
 |:---:|:---:|:---|
 | ![김진겸](https://github.com/user-attachments/assets/PLACEHOLDER_JG) | **김진겸 (팀장)** | 모바일 UI(App Inventor) 개발 · 휠 정렬(IR 센서) 제어 담당 |
 | ![김형준](https://github.com/user-attachments/assets/PLACEHOLDER_HJ) | **김형준** | RTK-GNSS 위치 인식 · 2축 카메라 짐벌 제어 |
-| ![이광민](https://github.com/user-attachments/assets/PLACEHOLDER_GM) | **이광민** | 기구 및 샤시 설계 · 전장 하드웨어 통합 |
+| ![이광민](https://github.com/user-attachments/assets/3e6b5a1c-4460-4a50-a415-82bbf676019e) | **이광민** | 기구 및 샤시 설계 · 전장 하드웨어 통합 |
 | ![이원무](https://github.com/user-attachments/assets/PLACEHOLDER_WM) | **이원무** | STM32 펌웨어 개발 · 포트포워딩 · 통신 프로토콜 설계 |
 | ![김관영](https://github.com/user-attachments/assets/PLACEHOLDER_MENTOR) | **김관영 (멘토)** | 임베디드 시스템 및 로보틱스 기술 자문 |
 
